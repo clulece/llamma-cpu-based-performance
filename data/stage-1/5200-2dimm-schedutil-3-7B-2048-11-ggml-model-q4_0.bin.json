@@ -1,0 +1,57 @@
+{
+    "date": "Tue May 30 16:06:26 UTC 2023",
+    "context_size": "2048",
+    "param_size": "7B",
+    "model": "ggml-model-q4_0.bin",
+    "ram_feeq": "5200",
+    "dimm_count": "2dimm",
+    "governer": "schedutil",
+    "concurrent_instance_count": 3,
+    "load_time": [
+        334.3,
+        356.36,
+        214.41
+    ],
+    "sample_time": [
+        0.43,
+        0.46,
+        0.48
+    ],
+    "prompt_eval_time": [
+        105.35,
+        134.08,
+        78.09
+    ],
+    "eval_time": [
+        189.41,
+        195.05,
+        182.69
+    ],
+    "total_time": [
+        7745.89,
+        7988.82,
+        7365.83
+    ],
+    "threads": 11,
+    "context": 2048,
+    "load_time_mean": 301.69,
+    "load_time_median": 334.3,
+    "load_time_max": 356.36,
+    "load_time_min": 214.41,
+    "sample_time_mean": 0.45666666666666667,
+    "sample_time_median": 0.46,
+    "sample_time_max": 0.48,
+    "sample_time_min": 0.43,
+    "prompt_eval_time_mean": 105.84,
+    "prompt_eval_time_median": 105.35,
+    "prompt_eval_time_max": 134.08,
+    "prompt_eval_time_min": 78.09,
+    "eval_time_mean": 189.05,
+    "eval_time_median": 189.41,
+    "eval_time_max": 195.05,
+    "eval_time_min": 182.69,
+    "total_time_mean": 7700.18,
+    "total_time_median": 7745.89,
+    "total_time_max": 7988.82,
+    "total_time_min": 7365.83
+}

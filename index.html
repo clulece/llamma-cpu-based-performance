@@ -1,0 +1,126 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta   http-equiv="Content-Security-Policy" 
+                content="default-src 'self' data:;
+                         connect-src data: 'self'; 
+                         script-src 'self' 'unsafe-inline' 'unsafe-eval';
+                         style-src 'self' data: 'unsafe-inline'; 
+                         img-src 'self' blob: data:;">
+        <!--<meta   name="viewport" 
+                content="width=device-width,
+                       height=device-height,
+                       initial-scale=1.0,
+                       minimum-scale=1.0">-->
+        <script src="/resources/plotly-2.23.2.min.js" charset="utf-8"></script>
+        <script>
+            window.addEventListener("load", async function() {
+                datasets = await fetch("/data/html-data/data.json").then(x => x.json())
+                
+                
+                for (var setname of Object.keys(datasets)) {
+                    let element = document.createElement("div");
+                    document.body.appendChild(element);
+                    let data = datasets[setname];
+                    
+                    element.id = setname;
+                    
+                    let layout = {
+	                    //margin: { t: 0 },
+	                    title: setname,
+                        showlegend: true
+                    };
+                    
+                    let options = {
+                        scrollZoom: true
+                    }
+                    
+	                Plotly.newPlot(element, data, layout, options);            
+                }
+	            
+                
+            })
+
+        </script>
+        <style>
+            body {
+                /*font-family: sans-serif;*/
+                line-height: 1.7;
+                width: min(1260px, 80%);
+                margin: 0px auto;
+                padding: 1em;
+                box-sizing: border-box;
+            }
+            h1 {
+                text-align: center;
+                margin: 4em;
+            }
+        </style>
+        <title>Performance of LLaMa CPU-based Inference Across Select System Configurations 🍅️</title>
+    </head>
+    <body>
+        <h1>Performance of LLaMa CPU-based Inference Across Select System Configurations</h1>
+        <p>This page presents data to compare the performance of CPU-based inference of base LLaMa models (7B, 13B, 30B, and 65B) across a single system and multiple system and inference configurations using llama.cpp.
+        
+        <div style="columns: 2">
+            <div style="break-inside: avoid-column;">
+                <h4>Measured Metrics</h4>
+                <ul>
+                    <li>Relative Load Time <code>load_time_median</code>
+                    <li>Token Sample Time <code>sample_time_median</code>
+                    <li>Prompt Token Evaluation Time <code>prompt_eval_time_median</code>
+                    <li>Token Evaluation Time <code>eval_time_median</code>
+                    <li>Relative Total Time <code>total_time_median</code>
+                </ul>
+                <p>Refer to llama.cpp documentation for more information.   
+            </div>
+            <div style="break-inside: avoid-column;">
+                <h4>System Configuration</h4>
+                <ul>
+                    <li>AMD 7950x (16c/32t), X670E-E
+                    <li>128GiB DDR5 6400MT/s CL32-39-39-102
+                    <li>SAMSUNG 970 EVO Plus SSD 1TB NVMe M.2 V-NAND
+                </ul>
+            </div>
+            <div style="break-inside: avoid-column;">
+                <h4>Llamma.cpp Configuration</h4>
+                <ul>
+                    <li>Version: ???
+                    <li>Parameters used: -t, -n 40, --ctx-size
+                </ul>
+            </div>
+            <div style="break-inside: avoid-column;">
+                <h4>System Configuration Variations</h4>
+                <ul>
+                    <li>128GiB 4 DIMM @ 3?00MT/s, <code>schedutil</code> OS CPU frequency governor.
+                    <li>64GiB 2 DIMM @ 5200MT/s, <code>schedutil</code> OS CPU frequency governor.
+                    <li>64GiB 2 DIMM @ 5200MT/s, <code>performance</code> OS CPU frequency governer.
+                </ul>
+            </div>
+            <div style="break-inside: avoid-column;">
+                <h4>Llamma.cpp Configuration Variations</h4>
+                <ul>
+                    <li>Concurrent Instances: 1, 3 
+                    <li>Threads: 1 — 20 
+                    <li>Contexts: 512, 2048 LLaMA 
+                    <li>Quantization: ggml @ q4_0
+                </ul>
+            </div>
+        </div>
+        
+         
+        <h2>Working with the Graphs &amp; Data</h2>
+        <p>The graphs on this page are best viewed on a Desktop computer.  
+        <p>The horizontal x-axis denotes the number of threads. The vertical y-axis denotes time, measured in milliseconds.
+        <p>For a less cluttered viewing of the graph, hide all the curves first, then only toggle the curves you want to examine. This is done by <em>rapidly</em>    double-clicking on one of the labels in the legend, then clicking once on each curve you want to view.
+        <p>Curve labels format is: 
+        <pre>
+        RAMSPEED-DIMMCOUNT-FREQGOV-NINSTANCE-PARAM-CTX-MODEL   
+        </pre>
+        <p>For example, the label <code>5200-2dimm-schedutil-3-7B-512-ggml-model-q4_0.bin</code> pertains to a run that was done when the system had 2 dimms of ram operating at 5200MT/s, the CPU frequency governer was set to <code>schedutil</code>, 3 seperate instances of llama.cpp were running the ggml-model-q4_0.bin version of the 7B model with a 512 context window.  
+        <p>The data used for these graphs is available for download as a zipped archive <a download href="/data/html-data/data-QVlr1kKzDjc=.7z">here</a>. Use the password <code>QVlr1kKzDjc=</code> to access the data.  
+        <p>Thes graphs are best viewed while consuming at least one tomato 🍅️.
+        <h2>Interactive Graphs</h2>
+    </body>
+</html>

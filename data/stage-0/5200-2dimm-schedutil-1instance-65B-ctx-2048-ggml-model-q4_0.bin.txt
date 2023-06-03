@@ -1,0 +1,2006 @@
+Tue May 30 15:12:40 UTC 2023
+2048
+2023-05-benchmarks/default_govverner/2dimm
+65B
+ggml-model-q4_0.bin
+------------------- cpurange ---------------------
+------------------- 3RUN ---------------------
+------------------- RUN ---------------------
+COMMAND: ./main -t 1 -m ./models/65B/ggml-model-q4_0.bin -n 40 --ctx-size 2048
+main: build = 588 (ac7876a)
+main: seed  = 1685459560
+llama.cpp: loading model from ./models/65B/ggml-model-q4_0.bin
+llama_model_load_internal: format     = ggjt v3 (latest)
+llama_model_load_internal: n_vocab    = 32000
+llama_model_load_internal: n_ctx      = 2048
+llama_model_load_internal: n_embd     = 8192
+llama_model_load_internal: n_mult     = 256
+llama_model_load_internal: n_head     = 64
+llama_model_load_internal: n_layer    = 80
+llama_model_load_internal: n_rot      = 128
+llama_model_load_internal: ftype      = 2 (mostly Q4_0)
+llama_model_load_internal: n_ff       = 22016
+llama_model_load_internal: n_parts    = 1
+llama_model_load_internal: model size = 65B
+llama_model_load_internal: ggml ctx size =    0.18 MB
+llama_model_load_internal: mem required  = 38610.46 MB (+ 5120.00 MB per state)
+.
+llama_init_from_file: kv self size  = 5120.00 MB
+
+system_info: n_threads = 1 / 32 | AVX = 1 | AVX2 = 1 | AVX512 = 1 | AVX512_VBMI = 1 | AVX512_VNNI = 1 | FMA = 1 | NEON = 0 | ARM_FMA = 0 | F16C = 1 | FP16_VA = 0 | WASM_SIMD = 0 | BLAS = 0 | SSE3 = 1 | VSX = 0 | 
+sampling: repeat_last_n = 64, repeat_penalty = 1.100000, presence_penalty = 0.000000, frequency_penalty = 0.000000, top_k = 40, tfs_z = 1.000000, top_p = 0.950000, typical_p = 1.000000, temp = 0.800000, mirostat = 0, mirostat_lr = 0.100000, mirostat_ent = 5.000000
+generate: n_ctx = 2048, n_batch = 512, n_predict = 40, n_keep = 0
+
+
+
+llama_print_timings:        load time = 26137.05 ms
+llama_print_timings:      sample time =    11.79 ms /    40 runs   (    0.29 ms per token)
+llama_print_timings: prompt eval time =  6865.82 ms /     2 tokens ( 3432.91 ms per token)
+llama_print_timings:        eval time = 101227.57 ms /    39 runs   ( 2595.58 ms per token)
+llama_print_timings:       total time = 127431.22 ms
+------------------- RUN ---------------------
+COMMAND: ./main -t 1 -m ./models/65B/ggml-model-q4_0.bin -n 40 --ctx-size 2048
+main: build = 588 (ac7876a)
+main: seed  = 1685459688
+llama.cpp: loading model from ./models/65B/ggml-model-q4_0.bin
+llama_model_load_internal: format     = ggjt v3 (latest)
+llama_model_load_internal: n_vocab    = 32000
+llama_model_load_internal: n_ctx      = 2048
+llama_model_load_internal: n_embd     = 8192
+llama_model_load_internal: n_mult     = 256
+llama_model_load_internal: n_head     = 64
+llama_model_load_internal: n_layer    = 80
+llama_model_load_internal: n_rot      = 128
+llama_model_load_internal: ftype      = 2 (mostly Q4_0)
+llama_model_load_internal: n_ff       = 22016
+llama_model_load_internal: n_parts    = 1
+llama_model_load_internal: model size = 65B
+llama_model_load_internal: ggml ctx size =    0.18 MB
+llama_model_load_internal: mem required  = 38610.46 MB (+ 5120.00 MB per state)
+.
+llama_init_from_file: kv self size  = 5120.00 MB
+
+system_info: n_threads = 1 / 32 | AVX = 1 | AVX2 = 1 | AVX512 = 1 | AVX512_VBMI = 1 | AVX512_VNNI = 1 | FMA = 1 | NEON = 0 | ARM_FMA = 0 | F16C = 1 | FP16_VA = 0 | WASM_SIMD = 0 | BLAS = 0 | SSE3 = 1 | VSX = 0 | 
+sampling: repeat_last_n = 64, repeat_penalty = 1.100000, presence_penalty = 0.000000, frequency_penalty = 0.000000, top_k = 40, tfs_z = 1.000000, top_p = 0.950000, typical_p = 1.000000, temp = 0.800000, mirostat = 0, mirostat_lr = 0.100000, mirostat_ent = 5.000000
+generate: n_ctx = 2048, n_batch = 512, n_predict = 40, n_keep = 0
+
+
+
+llama_print_timings:        load time =  5747.07 ms
+llama_print_timings:      sample time =    12.64 ms /    40 runs   (    0.32 ms per token)
+llama_print_timings: prompt eval time =  5071.67 ms /     2 tokens ( 2535.83 ms per token)
+llama_print_timings:        eval time = 102977.22 ms /    39 runs   ( 2640.44 ms per token)
+llama_print_timings:       total time = 108742.21 ms
+------------------- RUN ---------------------
+COMMAND: ./main -t 1 -m ./models/65B/ggml-model-q4_0.bin -n 40 --ctx-size 2048
+main: build = 588 (ac7876a)
+main: seed  = 1685459797
+llama.cpp: loading model from ./models/65B/ggml-model-q4_0.bin
+llama_model_load_internal: format     = ggjt v3 (latest)
+llama_model_load_internal: n_vocab    = 32000
+llama_model_load_internal: n_ctx      = 2048
+llama_model_load_internal: n_embd     = 8192
+llama_model_load_internal: n_mult     = 256
+llama_model_load_internal: n_head     = 64
+llama_model_load_internal: n_layer    = 80
+llama_model_load_internal: n_rot      = 128
+llama_model_load_internal: ftype      = 2 (mostly Q4_0)
+llama_model_load_internal: n_ff       = 22016
+llama_model_load_internal: n_parts    = 1
+llama_model_load_internal: model size = 65B
+llama_model_load_internal: ggml ctx size =    0.18 MB
+llama_model_load_internal: mem required  = 38610.46 MB (+ 5120.00 MB per state)
+.
+llama_init_from_file: kv self size  = 5120.00 MB
+
+system_info: n_threads = 1 / 32 | AVX = 1 | AVX2 = 1 | AVX512 = 1 | AVX512_VBMI = 1 | AVX512_VNNI = 1 | FMA = 1 | NEON = 0 | ARM_FMA = 0 | F16C = 1 | FP16_VA = 0 | WASM_SIMD = 0 | BLAS = 0 | SSE3 = 1 | VSX = 0 | 
+sampling: repeat_last_n = 64, repeat_penalty = 1.100000, presence_penalty = 0.000000, frequency_penalty = 0.000000, top_k = 40, tfs_z = 1.000000, top_p = 0.950000, typical_p = 1.000000, temp = 0.800000, mirostat = 0, mirostat_lr = 0.100000, mirostat_ent = 5.000000
+generate: n_ctx = 2048, n_batch = 512, n_predict = 40, n_keep = 0
+
+
+
+llama_print_timings:        load time =  5429.82 ms
+llama_print_timings:      sample time =    12.13 ms /    40 runs   (    0.30 ms per token)
+llama_print_timings: prompt eval time =  4942.03 ms /     2 tokens ( 2471.02 ms per token)
+llama_print_timings:        eval time = 105193.65 ms /    39 runs   ( 2697.27 ms per token)
+llama_print_timings:       total time = 110640.75 ms
+------------------- 3RUN ---------------------
+------------------- RUN ---------------------
+COMMAND: ./main -t 2 -m ./models/65B/ggml-model-q4_0.bin -n 40 --ctx-size 2048
+main: build = 588 (ac7876a)
+main: seed  = 1685459908
+llama.cpp: loading model from ./models/65B/ggml-model-q4_0.bin
+llama_model_load_internal: format     = ggjt v3 (latest)
+llama_model_load_internal: n_vocab    = 32000
+llama_model_load_internal: n_ctx      = 2048
+llama_model_load_internal: n_embd     = 8192
+llama_model_load_internal: n_mult     = 256
+llama_model_load_internal: n_head     = 64
+llama_model_load_internal: n_layer    = 80
+llama_model_load_internal: n_rot      = 128
+llama_model_load_internal: ftype      = 2 (mostly Q4_0)
+llama_model_load_internal: n_ff       = 22016
+llama_model_load_internal: n_parts    = 1
+llama_model_load_internal: model size = 65B
+llama_model_load_internal: ggml ctx size =    0.18 MB
+llama_model_load_internal: mem required  = 38610.46 MB (+ 5120.00 MB per state)
+.
+llama_init_from_file: kv self size  = 5120.00 MB
+
+system_info: n_threads = 2 / 32 | AVX = 1 | AVX2 = 1 | AVX512 = 1 | AVX512_VBMI = 1 | AVX512_VNNI = 1 | FMA = 1 | NEON = 0 | ARM_FMA = 0 | F16C = 1 | FP16_VA = 0 | WASM_SIMD = 0 | BLAS = 0 | SSE3 = 1 | VSX = 0 | 
+sampling: repeat_last_n = 64, repeat_penalty = 1.100000, presence_penalty = 0.000000, frequency_penalty = 0.000000, top_k = 40, tfs_z = 1.000000, top_p = 0.950000, typical_p = 1.000000, temp = 0.800000, mirostat = 0, mirostat_lr = 0.100000, mirostat_ent = 5.000000
+generate: n_ctx = 2048, n_batch = 512, n_predict = 40, n_keep = 0
+
+
+
+llama_print_timings:        load time =  3241.29 ms
+llama_print_timings:      sample time =    12.65 ms /    40 runs   (    0.32 ms per token)
+llama_print_timings: prompt eval time =  2747.19 ms /     2 tokens ( 1373.59 ms per token)
+llama_print_timings:        eval time = 54297.61 ms /    39 runs   ( 1392.25 ms per token)
+llama_print_timings:       total time = 57556.85 ms
+------------------- RUN ---------------------
+COMMAND: ./main -t 2 -m ./models/65B/ggml-model-q4_0.bin -n 40 --ctx-size 2048
+main: build = 588 (ac7876a)
+main: seed  = 1685459966
+llama.cpp: loading model from ./models/65B/ggml-model-q4_0.bin
+llama_model_load_internal: format     = ggjt v3 (latest)
+llama_model_load_internal: n_vocab    = 32000
+llama_model_load_internal: n_ctx      = 2048
+llama_model_load_internal: n_embd     = 8192
+llama_model_load_internal: n_mult     = 256
+llama_model_load_internal: n_head     = 64
+llama_model_load_internal: n_layer    = 80
+llama_model_load_internal: n_rot      = 128
+llama_model_load_internal: ftype      = 2 (mostly Q4_0)
+llama_model_load_internal: n_ff       = 22016
+llama_model_load_internal: n_parts    = 1
+llama_model_load_internal: model size = 65B
+llama_model_load_internal: ggml ctx size =    0.18 MB
+llama_model_load_internal: mem required  = 38610.46 MB (+ 5120.00 MB per state)
+.
+llama_init_from_file: kv self size  = 5120.00 MB
+
+system_info: n_threads = 2 / 32 | AVX = 1 | AVX2 = 1 | AVX512 = 1 | AVX512_VBMI = 1 | AVX512_VNNI = 1 | FMA = 1 | NEON = 0 | ARM_FMA = 0 | F16C = 1 | FP16_VA = 0 | WASM_SIMD = 0 | BLAS = 0 | SSE3 = 1 | VSX = 0 | 
+sampling: repeat_last_n = 64, repeat_penalty = 1.100000, presence_penalty = 0.000000, frequency_penalty = 0.000000, top_k = 40, tfs_z = 1.000000, top_p = 0.950000, typical_p = 1.000000, temp = 0.800000, mirostat = 0, mirostat_lr = 0.100000, mirostat_ent = 5.000000
+generate: n_ctx = 2048, n_batch = 512, n_predict = 40, n_keep = 0
+
+
+
+llama_print_timings:        load time =  3260.24 ms
+llama_print_timings:      sample time =    12.91 ms /    40 runs   (    0.32 ms per token)
+llama_print_timings: prompt eval time =  2757.54 ms /     2 tokens ( 1378.77 ms per token)
+llama_print_timings:        eval time = 54300.29 ms /    39 runs   ( 1392.32 ms per token)
+llama_print_timings:       total time = 57578.74 ms
+------------------- RUN ---------------------
+COMMAND: ./main -t 2 -m ./models/65B/ggml-model-q4_0.bin -n 40 --ctx-size 2048
+main: build = 588 (ac7876a)
+main: seed  = 1685460024
+llama.cpp: loading model from ./models/65B/ggml-model-q4_0.bin
+llama_model_load_internal: format     = ggjt v3 (latest)
+llama_model_load_internal: n_vocab    = 32000
+llama_model_load_internal: n_ctx      = 2048
+llama_model_load_internal: n_embd     = 8192
+llama_model_load_internal: n_mult     = 256
+llama_model_load_internal: n_head     = 64
+llama_model_load_internal: n_layer    = 80
+llama_model_load_internal: n_rot      = 128
+llama_model_load_internal: ftype      = 2 (mostly Q4_0)
+llama_model_load_internal: n_ff       = 22016
+llama_model_load_internal: n_parts    = 1
+llama_model_load_internal: model size = 65B
+llama_model_load_internal: ggml ctx size =    0.18 MB
+llama_model_load_internal: mem required  = 38610.46 MB (+ 5120.00 MB per state)
+.
+llama_init_from_file: kv self size  = 5120.00 MB
+
+system_info: n_threads = 2 / 32 | AVX = 1 | AVX2 = 1 | AVX512 = 1 | AVX512_VBMI = 1 | AVX512_VNNI = 1 | FMA = 1 | NEON = 0 | ARM_FMA = 0 | F16C = 1 | FP16_VA = 0 | WASM_SIMD = 0 | BLAS = 0 | SSE3 = 1 | VSX = 0 | 
+sampling: repeat_last_n = 64, repeat_penalty = 1.100000, presence_penalty = 0.000000, frequency_penalty = 0.000000, top_k = 40, tfs_z = 1.000000, top_p = 0.950000, typical_p = 1.000000, temp = 0.800000, mirostat = 0, mirostat_lr = 0.100000, mirostat_ent = 5.000000
+generate: n_ctx = 2048, n_batch = 512, n_predict = 40, n_keep = 0
+
+
+
+llama_print_timings:        load time =  3242.10 ms
+llama_print_timings:      sample time =    12.39 ms /    40 runs   (    0.31 ms per token)
+llama_print_timings: prompt eval time =  2733.20 ms /     2 tokens ( 1366.60 ms per token)
+llama_print_timings:        eval time = 54024.81 ms /    39 runs   ( 1385.25 ms per token)
+llama_print_timings:       total time = 57284.52 ms
+------------------- 3RUN ---------------------
+------------------- RUN ---------------------
+COMMAND: ./main -t 3 -m ./models/65B/ggml-model-q4_0.bin -n 40 --ctx-size 2048
+main: build = 588 (ac7876a)
+main: seed  = 1685460082
+llama.cpp: loading model from ./models/65B/ggml-model-q4_0.bin
+llama_model_load_internal: format     = ggjt v3 (latest)
+llama_model_load_internal: n_vocab    = 32000
+llama_model_load_internal: n_ctx      = 2048
+llama_model_load_internal: n_embd     = 8192
+llama_model_load_internal: n_mult     = 256
+llama_model_load_internal: n_head     = 64
+llama_model_load_internal: n_layer    = 80
+llama_model_load_internal: n_rot      = 128
+llama_model_load_internal: ftype      = 2 (mostly Q4_0)
+llama_model_load_internal: n_ff       = 22016
+llama_model_load_internal: n_parts    = 1
+llama_model_load_internal: model size = 65B
+llama_model_load_internal: ggml ctx size =    0.18 MB
+llama_model_load_internal: mem required  = 38610.46 MB (+ 5120.00 MB per state)
+.
+llama_init_from_file: kv self size  = 5120.00 MB
+
+system_info: n_threads = 3 / 32 | AVX = 1 | AVX2 = 1 | AVX512 = 1 | AVX512_VBMI = 1 | AVX512_VNNI = 1 | FMA = 1 | NEON = 0 | ARM_FMA = 0 | F16C = 1 | FP16_VA = 0 | WASM_SIMD = 0 | BLAS = 0 | SSE3 = 1 | VSX = 0 | 
+sampling: repeat_last_n = 64, repeat_penalty = 1.100000, presence_penalty = 0.000000, frequency_penalty = 0.000000, top_k = 40, tfs_z = 1.000000, top_p = 0.950000, typical_p = 1.000000, temp = 0.800000, mirostat = 0, mirostat_lr = 0.100000, mirostat_ent = 5.000000
+generate: n_ctx = 2048, n_batch = 512, n_predict = 40, n_keep = 0
+
+
+
+llama_print_timings:        load time =  2382.48 ms
+llama_print_timings:      sample time =    12.10 ms /    40 runs   (    0.30 ms per token)
+llama_print_timings: prompt eval time =  1891.86 ms /     2 tokens (  945.93 ms per token)
+llama_print_timings:        eval time = 38461.88 ms /    39 runs   (  986.20 ms per token)
+llama_print_timings:       total time = 40861.79 ms
+------------------- RUN ---------------------
+COMMAND: ./main -t 3 -m ./models/65B/ggml-model-q4_0.bin -n 40 --ctx-size 2048
+main: build = 588 (ac7876a)
+main: seed  = 1685460123
+llama.cpp: loading model from ./models/65B/ggml-model-q4_0.bin
+llama_model_load_internal: format     = ggjt v3 (latest)
+llama_model_load_internal: n_vocab    = 32000
+llama_model_load_internal: n_ctx      = 2048
+llama_model_load_internal: n_embd     = 8192
+llama_model_load_internal: n_mult     = 256
+llama_model_load_internal: n_head     = 64
+llama_model_load_internal: n_layer    = 80
+llama_model_load_internal: n_rot      = 128
+llama_model_load_internal: ftype      = 2 (mostly Q4_0)
+llama_model_load_internal: n_ff       = 22016
+llama_model_load_internal: n_parts    = 1
+llama_model_load_internal: model size = 65B
+llama_model_load_internal: ggml ctx size =    0.18 MB
+llama_model_load_internal: mem required  = 38610.46 MB (+ 5120.00 MB per state)
+.
+llama_init_from_file: kv self size  = 5120.00 MB
+
+system_info: n_threads = 3 / 32 | AVX = 1 | AVX2 = 1 | AVX512 = 1 | AVX512_VBMI = 1 | AVX512_VNNI = 1 | FMA = 1 | NEON = 0 | ARM_FMA = 0 | F16C = 1 | FP16_VA = 0 | WASM_SIMD = 0 | BLAS = 0 | SSE3 = 1 | VSX = 0 | 
+sampling: repeat_last_n = 64, repeat_penalty = 1.100000, presence_penalty = 0.000000, frequency_penalty = 0.000000, top_k = 40, tfs_z = 1.000000, top_p = 0.950000, typical_p = 1.000000, temp = 0.800000, mirostat = 0, mirostat_lr = 0.100000, mirostat_ent = 5.000000
+generate: n_ctx = 2048, n_batch = 512, n_predict = 40, n_keep = 0
+
+
+
+llama_print_timings:        load time =  2393.49 ms
+llama_print_timings:      sample time =    12.70 ms /    40 runs   (    0.32 ms per token)
+llama_print_timings: prompt eval time =  1897.09 ms /     2 tokens (  948.55 ms per token)
+llama_print_timings:        eval time = 38571.27 ms /    39 runs   (  989.01 ms per token)
+llama_print_timings:       total time = 40982.73 ms
+------------------- RUN ---------------------
+COMMAND: ./main -t 3 -m ./models/65B/ggml-model-q4_0.bin -n 40 --ctx-size 2048
+main: build = 588 (ac7876a)
+main: seed  = 1685460164
+llama.cpp: loading model from ./models/65B/ggml-model-q4_0.bin
+llama_model_load_internal: format     = ggjt v3 (latest)
+llama_model_load_internal: n_vocab    = 32000
+llama_model_load_internal: n_ctx      = 2048
+llama_model_load_internal: n_embd     = 8192
+llama_model_load_internal: n_mult     = 256
+llama_model_load_internal: n_head     = 64
+llama_model_load_internal: n_layer    = 80
+llama_model_load_internal: n_rot      = 128
+llama_model_load_internal: ftype      = 2 (mostly Q4_0)
+llama_model_load_internal: n_ff       = 22016
+llama_model_load_internal: n_parts    = 1
+llama_model_load_internal: model size = 65B
+llama_model_load_internal: ggml ctx size =    0.18 MB
+llama_model_load_internal: mem required  = 38610.46 MB (+ 5120.00 MB per state)
+.
+llama_init_from_file: kv self size  = 5120.00 MB
+
+system_info: n_threads = 3 / 32 | AVX = 1 | AVX2 = 1 | AVX512 = 1 | AVX512_VBMI = 1 | AVX512_VNNI = 1 | FMA = 1 | NEON = 0 | ARM_FMA = 0 | F16C = 1 | FP16_VA = 0 | WASM_SIMD = 0 | BLAS = 0 | SSE3 = 1 | VSX = 0 | 
+sampling: repeat_last_n = 64, repeat_penalty = 1.100000, presence_penalty = 0.000000, frequency_penalty = 0.000000, top_k = 40, tfs_z = 1.000000, top_p = 0.950000, typical_p = 1.000000, temp = 0.800000, mirostat = 0, mirostat_lr = 0.100000, mirostat_ent = 5.000000
+generate: n_ctx = 2048, n_batch = 512, n_predict = 40, n_keep = 0
+
+
+
+llama_print_timings:        load time =  2390.14 ms
+llama_print_timings:      sample time =    12.34 ms /    40 runs   (    0.31 ms per token)
+llama_print_timings: prompt eval time =  1895.21 ms /     2 tokens (  947.61 ms per token)
+llama_print_timings:        eval time = 37866.12 ms /    39 runs   (  970.93 ms per token)
+llama_print_timings:       total time = 40273.90 ms
+------------------- 3RUN ---------------------
+------------------- RUN ---------------------
+COMMAND: ./main -t 4 -m ./models/65B/ggml-model-q4_0.bin -n 40 --ctx-size 2048
+main: build = 588 (ac7876a)
+main: seed  = 1685460205
+llama.cpp: loading model from ./models/65B/ggml-model-q4_0.bin
+llama_model_load_internal: format     = ggjt v3 (latest)
+llama_model_load_internal: n_vocab    = 32000
+llama_model_load_internal: n_ctx      = 2048
+llama_model_load_internal: n_embd     = 8192
+llama_model_load_internal: n_mult     = 256
+llama_model_load_internal: n_head     = 64
+llama_model_load_internal: n_layer    = 80
+llama_model_load_internal: n_rot      = 128
+llama_model_load_internal: ftype      = 2 (mostly Q4_0)
+llama_model_load_internal: n_ff       = 22016
+llama_model_load_internal: n_parts    = 1
+llama_model_load_internal: model size = 65B
+llama_model_load_internal: ggml ctx size =    0.18 MB
+llama_model_load_internal: mem required  = 38610.46 MB (+ 5120.00 MB per state)
+.
+llama_init_from_file: kv self size  = 5120.00 MB
+
+system_info: n_threads = 4 / 32 | AVX = 1 | AVX2 = 1 | AVX512 = 1 | AVX512_VBMI = 1 | AVX512_VNNI = 1 | FMA = 1 | NEON = 0 | ARM_FMA = 0 | F16C = 1 | FP16_VA = 0 | WASM_SIMD = 0 | BLAS = 0 | SSE3 = 1 | VSX = 0 | 
+sampling: repeat_last_n = 64, repeat_penalty = 1.100000, presence_penalty = 0.000000, frequency_penalty = 0.000000, top_k = 40, tfs_z = 1.000000, top_p = 0.950000, typical_p = 1.000000, temp = 0.800000, mirostat = 0, mirostat_lr = 0.100000, mirostat_ent = 5.000000
+generate: n_ctx = 2048, n_batch = 512, n_predict = 40, n_keep = 0
+
+
+
+llama_print_timings:        load time =  1964.96 ms
+llama_print_timings:      sample time =    12.71 ms /    40 runs   (    0.32 ms per token)
+llama_print_timings: prompt eval time =  1468.70 ms /     2 tokens (  734.35 ms per token)
+llama_print_timings:        eval time = 30247.43 ms /    39 runs   (  775.58 ms per token)
+llama_print_timings:       total time = 32230.40 ms
+------------------- RUN ---------------------
+COMMAND: ./main -t 4 -m ./models/65B/ggml-model-q4_0.bin -n 40 --ctx-size 2048
+main: build = 588 (ac7876a)
+main: seed  = 1685460237
+llama.cpp: loading model from ./models/65B/ggml-model-q4_0.bin
+llama_model_load_internal: format     = ggjt v3 (latest)
+llama_model_load_internal: n_vocab    = 32000
+llama_model_load_internal: n_ctx      = 2048
+llama_model_load_internal: n_embd     = 8192
+llama_model_load_internal: n_mult     = 256
+llama_model_load_internal: n_head     = 64
+llama_model_load_internal: n_layer    = 80
+llama_model_load_internal: n_rot      = 128
+llama_model_load_internal: ftype      = 2 (mostly Q4_0)
+llama_model_load_internal: n_ff       = 22016
+llama_model_load_internal: n_parts    = 1
+llama_model_load_internal: model size = 65B
+llama_model_load_internal: ggml ctx size =    0.18 MB
+llama_model_load_internal: mem required  = 38610.46 MB (+ 5120.00 MB per state)
+.
+llama_init_from_file: kv self size  = 5120.00 MB
+
+system_info: n_threads = 4 / 32 | AVX = 1 | AVX2 = 1 | AVX512 = 1 | AVX512_VBMI = 1 | AVX512_VNNI = 1 | FMA = 1 | NEON = 0 | ARM_FMA = 0 | F16C = 1 | FP16_VA = 0 | WASM_SIMD = 0 | BLAS = 0 | SSE3 = 1 | VSX = 0 | 
+sampling: repeat_last_n = 64, repeat_penalty = 1.100000, presence_penalty = 0.000000, frequency_penalty = 0.000000, top_k = 40, tfs_z = 1.000000, top_p = 0.950000, typical_p = 1.000000, temp = 0.800000, mirostat = 0, mirostat_lr = 0.100000, mirostat_ent = 5.000000
+generate: n_ctx = 2048, n_batch = 512, n_predict = 40, n_keep = 0
+
+
+
+llama_print_timings:        load time =  1963.25 ms
+llama_print_timings:      sample time =    12.59 ms /    40 runs   (    0.31 ms per token)
+llama_print_timings: prompt eval time =  1472.33 ms /     2 tokens (  736.16 ms per token)
+llama_print_timings:        eval time = 30055.03 ms /    39 runs   (  770.64 ms per token)
+llama_print_timings:       total time = 32036.21 ms
+------------------- RUN ---------------------
+COMMAND: ./main -t 4 -m ./models/65B/ggml-model-q4_0.bin -n 40 --ctx-size 2048
+main: build = 588 (ac7876a)
+main: seed  = 1685460270
+llama.cpp: loading model from ./models/65B/ggml-model-q4_0.bin
+llama_model_load_internal: format     = ggjt v3 (latest)
+llama_model_load_internal: n_vocab    = 32000
+llama_model_load_internal: n_ctx      = 2048
+llama_model_load_internal: n_embd     = 8192
+llama_model_load_internal: n_mult     = 256
+llama_model_load_internal: n_head     = 64
+llama_model_load_internal: n_layer    = 80
+llama_model_load_internal: n_rot      = 128
+llama_model_load_internal: ftype      = 2 (mostly Q4_0)
+llama_model_load_internal: n_ff       = 22016
+llama_model_load_internal: n_parts    = 1
+llama_model_load_internal: model size = 65B
+llama_model_load_internal: ggml ctx size =    0.18 MB
+llama_model_load_internal: mem required  = 38610.46 MB (+ 5120.00 MB per state)
+.
+llama_init_from_file: kv self size  = 5120.00 MB
+
+system_info: n_threads = 4 / 32 | AVX = 1 | AVX2 = 1 | AVX512 = 1 | AVX512_VBMI = 1 | AVX512_VNNI = 1 | FMA = 1 | NEON = 0 | ARM_FMA = 0 | F16C = 1 | FP16_VA = 0 | WASM_SIMD = 0 | BLAS = 0 | SSE3 = 1 | VSX = 0 | 
+sampling: repeat_last_n = 64, repeat_penalty = 1.100000, presence_penalty = 0.000000, frequency_penalty = 0.000000, top_k = 40, tfs_z = 1.000000, top_p = 0.950000, typical_p = 1.000000, temp = 0.800000, mirostat = 0, mirostat_lr = 0.100000, mirostat_ent = 5.000000
+generate: n_ctx = 2048, n_batch = 512, n_predict = 40, n_keep = 0
+
+
+
+llama_print_timings:        load time =  1965.47 ms
+llama_print_timings:      sample time =    12.74 ms /    40 runs   (    0.32 ms per token)
+llama_print_timings: prompt eval time =  1469.02 ms /     2 tokens (  734.51 ms per token)
+llama_print_timings:        eval time = 29832.47 ms /    39 runs   (  764.94 ms per token)
+llama_print_timings:       total time = 31815.96 ms
+------------------- 3RUN ---------------------
+------------------- RUN ---------------------
+COMMAND: ./main -t 5 -m ./models/65B/ggml-model-q4_0.bin -n 40 --ctx-size 2048
+main: build = 588 (ac7876a)
+main: seed  = 1685460302
+llama.cpp: loading model from ./models/65B/ggml-model-q4_0.bin
+llama_model_load_internal: format     = ggjt v3 (latest)
+llama_model_load_internal: n_vocab    = 32000
+llama_model_load_internal: n_ctx      = 2048
+llama_model_load_internal: n_embd     = 8192
+llama_model_load_internal: n_mult     = 256
+llama_model_load_internal: n_head     = 64
+llama_model_load_internal: n_layer    = 80
+llama_model_load_internal: n_rot      = 128
+llama_model_load_internal: ftype      = 2 (mostly Q4_0)
+llama_model_load_internal: n_ff       = 22016
+llama_model_load_internal: n_parts    = 1
+llama_model_load_internal: model size = 65B
+llama_model_load_internal: ggml ctx size =    0.18 MB
+llama_model_load_internal: mem required  = 38610.46 MB (+ 5120.00 MB per state)
+.
+llama_init_from_file: kv self size  = 5120.00 MB
+
+system_info: n_threads = 5 / 32 | AVX = 1 | AVX2 = 1 | AVX512 = 1 | AVX512_VBMI = 1 | AVX512_VNNI = 1 | FMA = 1 | NEON = 0 | ARM_FMA = 0 | F16C = 1 | FP16_VA = 0 | WASM_SIMD = 0 | BLAS = 0 | SSE3 = 1 | VSX = 0 | 
+sampling: repeat_last_n = 64, repeat_penalty = 1.100000, presence_penalty = 0.000000, frequency_penalty = 0.000000, top_k = 40, tfs_z = 1.000000, top_p = 0.950000, typical_p = 1.000000, temp = 0.800000, mirostat = 0, mirostat_lr = 0.100000, mirostat_ent = 5.000000
+generate: n_ctx = 2048, n_batch = 512, n_predict = 40, n_keep = 0
+
+
+
+llama_print_timings:        load time =  1715.00 ms
+llama_print_timings:      sample time =    12.88 ms /    40 runs   (    0.32 ms per token)
+llama_print_timings: prompt eval time =  1217.13 ms /     2 tokens (  608.56 ms per token)
+llama_print_timings:        eval time = 26629.93 ms /    39 runs   (  682.82 ms per token)
+llama_print_timings:       total time = 28363.11 ms
+------------------- RUN ---------------------
+COMMAND: ./main -t 5 -m ./models/65B/ggml-model-q4_0.bin -n 40 --ctx-size 2048
+main: build = 588 (ac7876a)
+main: seed  = 1685460331
+llama.cpp: loading model from ./models/65B/ggml-model-q4_0.bin
+llama_model_load_internal: format     = ggjt v3 (latest)
+llama_model_load_internal: n_vocab    = 32000
+llama_model_load_internal: n_ctx      = 2048
+llama_model_load_internal: n_embd     = 8192
+llama_model_load_internal: n_mult     = 256
+llama_model_load_internal: n_head     = 64
+llama_model_load_internal: n_layer    = 80
+llama_model_load_internal: n_rot      = 128
+llama_model_load_internal: ftype      = 2 (mostly Q4_0)
+llama_model_load_internal: n_ff       = 22016
+llama_model_load_internal: n_parts    = 1
+llama_model_load_internal: model size = 65B
+llama_model_load_internal: ggml ctx size =    0.18 MB
+llama_model_load_internal: mem required  = 38610.46 MB (+ 5120.00 MB per state)
+.
+llama_init_from_file: kv self size  = 5120.00 MB
+
+system_info: n_threads = 5 / 32 | AVX = 1 | AVX2 = 1 | AVX512 = 1 | AVX512_VBMI = 1 | AVX512_VNNI = 1 | FMA = 1 | NEON = 0 | ARM_FMA = 0 | F16C = 1 | FP16_VA = 0 | WASM_SIMD = 0 | BLAS = 0 | SSE3 = 1 | VSX = 0 | 
+sampling: repeat_last_n = 64, repeat_penalty = 1.100000, presence_penalty = 0.000000, frequency_penalty = 0.000000, top_k = 40, tfs_z = 1.000000, top_p = 0.950000, typical_p = 1.000000, temp = 0.800000, mirostat = 0, mirostat_lr = 0.100000, mirostat_ent = 5.000000
+generate: n_ctx = 2048, n_batch = 512, n_predict = 40, n_keep = 0
+
+
+
+llama_print_timings:        load time =  1718.81 ms
+llama_print_timings:      sample time =    12.72 ms /    40 runs   (    0.32 ms per token)
+llama_print_timings: prompt eval time =  1211.38 ms /     2 tokens (  605.69 ms per token)
+llama_print_timings:        eval time = 26760.09 ms /    39 runs   (  686.16 ms per token)
+llama_print_timings:       total time = 28496.98 ms
+------------------- RUN ---------------------
+COMMAND: ./main -t 5 -m ./models/65B/ggml-model-q4_0.bin -n 40 --ctx-size 2048
+main: build = 588 (ac7876a)
+main: seed  = 1685460359
+llama.cpp: loading model from ./models/65B/ggml-model-q4_0.bin
+llama_model_load_internal: format     = ggjt v3 (latest)
+llama_model_load_internal: n_vocab    = 32000
+llama_model_load_internal: n_ctx      = 2048
+llama_model_load_internal: n_embd     = 8192
+llama_model_load_internal: n_mult     = 256
+llama_model_load_internal: n_head     = 64
+llama_model_load_internal: n_layer    = 80
+llama_model_load_internal: n_rot      = 128
+llama_model_load_internal: ftype      = 2 (mostly Q4_0)
+llama_model_load_internal: n_ff       = 22016
+llama_model_load_internal: n_parts    = 1
+llama_model_load_internal: model size = 65B
+llama_model_load_internal: ggml ctx size =    0.18 MB
+llama_model_load_internal: mem required  = 38610.46 MB (+ 5120.00 MB per state)
+.
+llama_init_from_file: kv self size  = 5120.00 MB
+
+system_info: n_threads = 5 / 32 | AVX = 1 | AVX2 = 1 | AVX512 = 1 | AVX512_VBMI = 1 | AVX512_VNNI = 1 | FMA = 1 | NEON = 0 | ARM_FMA = 0 | F16C = 1 | FP16_VA = 0 | WASM_SIMD = 0 | BLAS = 0 | SSE3 = 1 | VSX = 0 | 
+sampling: repeat_last_n = 64, repeat_penalty = 1.100000, presence_penalty = 0.000000, frequency_penalty = 0.000000, top_k = 40, tfs_z = 1.000000, top_p = 0.950000, typical_p = 1.000000, temp = 0.800000, mirostat = 0, mirostat_lr = 0.100000, mirostat_ent = 5.000000
+generate: n_ctx = 2048, n_batch = 512, n_predict = 40, n_keep = 0
+
+
+
+llama_print_timings:        load time =  1721.34 ms
+llama_print_timings:      sample time =    12.85 ms /    40 runs   (    0.32 ms per token)
+llama_print_timings: prompt eval time =  1220.88 ms /     2 tokens (  610.44 ms per token)
+llama_print_timings:        eval time = 26592.90 ms /    39 runs   (  681.87 ms per token)
+llama_print_timings:       total time = 28332.44 ms
+------------------- 3RUN ---------------------
+------------------- RUN ---------------------
+COMMAND: ./main -t 6 -m ./models/65B/ggml-model-q4_0.bin -n 40 --ctx-size 2048
+main: build = 588 (ac7876a)
+main: seed  = 1685460388
+llama.cpp: loading model from ./models/65B/ggml-model-q4_0.bin
+llama_model_load_internal: format     = ggjt v3 (latest)
+llama_model_load_internal: n_vocab    = 32000
+llama_model_load_internal: n_ctx      = 2048
+llama_model_load_internal: n_embd     = 8192
+llama_model_load_internal: n_mult     = 256
+llama_model_load_internal: n_head     = 64
+llama_model_load_internal: n_layer    = 80
+llama_model_load_internal: n_rot      = 128
+llama_model_load_internal: ftype      = 2 (mostly Q4_0)
+llama_model_load_internal: n_ff       = 22016
+llama_model_load_internal: n_parts    = 1
+llama_model_load_internal: model size = 65B
+llama_model_load_internal: ggml ctx size =    0.18 MB
+llama_model_load_internal: mem required  = 38610.46 MB (+ 5120.00 MB per state)
+.
+llama_init_from_file: kv self size  = 5120.00 MB
+
+system_info: n_threads = 6 / 32 | AVX = 1 | AVX2 = 1 | AVX512 = 1 | AVX512_VBMI = 1 | AVX512_VNNI = 1 | FMA = 1 | NEON = 0 | ARM_FMA = 0 | F16C = 1 | FP16_VA = 0 | WASM_SIMD = 0 | BLAS = 0 | SSE3 = 1 | VSX = 0 | 
+sampling: repeat_last_n = 64, repeat_penalty = 1.100000, presence_penalty = 0.000000, frequency_penalty = 0.000000, top_k = 40, tfs_z = 1.000000, top_p = 0.950000, typical_p = 1.000000, temp = 0.800000, mirostat = 0, mirostat_lr = 0.100000, mirostat_ent = 5.000000
+generate: n_ctx = 2048, n_batch = 512, n_predict = 40, n_keep = 0
+
+
+
+llama_print_timings:        load time =  1551.94 ms
+llama_print_timings:      sample time =    12.83 ms /    40 runs   (    0.32 ms per token)
+llama_print_timings: prompt eval time =  1053.79 ms /     2 tokens (  526.90 ms per token)
+llama_print_timings:        eval time = 25123.69 ms /    39 runs   (  644.20 ms per token)
+llama_print_timings:       total time = 26693.75 ms
+------------------- RUN ---------------------
+COMMAND: ./main -t 6 -m ./models/65B/ggml-model-q4_0.bin -n 40 --ctx-size 2048
+main: build = 588 (ac7876a)
+main: seed  = 1685460415
+llama.cpp: loading model from ./models/65B/ggml-model-q4_0.bin
+llama_model_load_internal: format     = ggjt v3 (latest)
+llama_model_load_internal: n_vocab    = 32000
+llama_model_load_internal: n_ctx      = 2048
+llama_model_load_internal: n_embd     = 8192
+llama_model_load_internal: n_mult     = 256
+llama_model_load_internal: n_head     = 64
+llama_model_load_internal: n_layer    = 80
+llama_model_load_internal: n_rot      = 128
+llama_model_load_internal: ftype      = 2 (mostly Q4_0)
+llama_model_load_internal: n_ff       = 22016
+llama_model_load_internal: n_parts    = 1
+llama_model_load_internal: model size = 65B
+llama_model_load_internal: ggml ctx size =    0.18 MB
+llama_model_load_internal: mem required  = 38610.46 MB (+ 5120.00 MB per state)
+.
+llama_init_from_file: kv self size  = 5120.00 MB
+
+system_info: n_threads = 6 / 32 | AVX = 1 | AVX2 = 1 | AVX512 = 1 | AVX512_VBMI = 1 | AVX512_VNNI = 1 | FMA = 1 | NEON = 0 | ARM_FMA = 0 | F16C = 1 | FP16_VA = 0 | WASM_SIMD = 0 | BLAS = 0 | SSE3 = 1 | VSX = 0 | 
+sampling: repeat_last_n = 64, repeat_penalty = 1.100000, presence_penalty = 0.000000, frequency_penalty = 0.000000, top_k = 40, tfs_z = 1.000000, top_p = 0.950000, typical_p = 1.000000, temp = 0.800000, mirostat = 0, mirostat_lr = 0.100000, mirostat_ent = 5.000000
+generate: n_ctx = 2048, n_batch = 512, n_predict = 40, n_keep = 0
+
+
+
+llama_print_timings:        load time =  1564.11 ms
+llama_print_timings:      sample time =    12.60 ms /    40 runs   (    0.31 ms per token)
+llama_print_timings: prompt eval time =  1067.75 ms /     2 tokens (  533.88 ms per token)
+llama_print_timings:        eval time = 25302.62 ms /    39 runs   (  648.79 ms per token)
+llama_print_timings:       total time = 26884.66 ms
+------------------- RUN ---------------------
+COMMAND: ./main -t 6 -m ./models/65B/ggml-model-q4_0.bin -n 40 --ctx-size 2048
+main: build = 588 (ac7876a)
+main: seed  = 1685460442
+llama.cpp: loading model from ./models/65B/ggml-model-q4_0.bin
+llama_model_load_internal: format     = ggjt v3 (latest)
+llama_model_load_internal: n_vocab    = 32000
+llama_model_load_internal: n_ctx      = 2048
+llama_model_load_internal: n_embd     = 8192
+llama_model_load_internal: n_mult     = 256
+llama_model_load_internal: n_head     = 64
+llama_model_load_internal: n_layer    = 80
+llama_model_load_internal: n_rot      = 128
+llama_model_load_internal: ftype      = 2 (mostly Q4_0)
+llama_model_load_internal: n_ff       = 22016
+llama_model_load_internal: n_parts    = 1
+llama_model_load_internal: model size = 65B
+llama_model_load_internal: ggml ctx size =    0.18 MB
+llama_model_load_internal: mem required  = 38610.46 MB (+ 5120.00 MB per state)
+.
+llama_init_from_file: kv self size  = 5120.00 MB
+
+system_info: n_threads = 6 / 32 | AVX = 1 | AVX2 = 1 | AVX512 = 1 | AVX512_VBMI = 1 | AVX512_VNNI = 1 | FMA = 1 | NEON = 0 | ARM_FMA = 0 | F16C = 1 | FP16_VA = 0 | WASM_SIMD = 0 | BLAS = 0 | SSE3 = 1 | VSX = 0 | 
+sampling: repeat_last_n = 64, repeat_penalty = 1.100000, presence_penalty = 0.000000, frequency_penalty = 0.000000, top_k = 40, tfs_z = 1.000000, top_p = 0.950000, typical_p = 1.000000, temp = 0.800000, mirostat = 0, mirostat_lr = 0.100000, mirostat_ent = 5.000000
+generate: n_ctx = 2048, n_batch = 512, n_predict = 40, n_keep = 0
+
+
+
+llama_print_timings:        load time =  1556.64 ms
+llama_print_timings:      sample time =    12.85 ms /    40 runs   (    0.32 ms per token)
+llama_print_timings: prompt eval time =  1057.58 ms /     2 tokens (  528.79 ms per token)
+llama_print_timings:        eval time = 25168.32 ms /    39 runs   (  645.34 ms per token)
+llama_print_timings:       total time = 26743.13 ms
+------------------- 3RUN ---------------------
+------------------- RUN ---------------------
+COMMAND: ./main -t 7 -m ./models/65B/ggml-model-q4_0.bin -n 40 --ctx-size 2048
+main: build = 588 (ac7876a)
+main: seed  = 1685460469
+llama.cpp: loading model from ./models/65B/ggml-model-q4_0.bin
+llama_model_load_internal: format     = ggjt v3 (latest)
+llama_model_load_internal: n_vocab    = 32000
+llama_model_load_internal: n_ctx      = 2048
+llama_model_load_internal: n_embd     = 8192
+llama_model_load_internal: n_mult     = 256
+llama_model_load_internal: n_head     = 64
+llama_model_load_internal: n_layer    = 80
+llama_model_load_internal: n_rot      = 128
+llama_model_load_internal: ftype      = 2 (mostly Q4_0)
+llama_model_load_internal: n_ff       = 22016
+llama_model_load_internal: n_parts    = 1
+llama_model_load_internal: model size = 65B
+llama_model_load_internal: ggml ctx size =    0.18 MB
+llama_model_load_internal: mem required  = 38610.46 MB (+ 5120.00 MB per state)
+.
+llama_init_from_file: kv self size  = 5120.00 MB
+
+system_info: n_threads = 7 / 32 | AVX = 1 | AVX2 = 1 | AVX512 = 1 | AVX512_VBMI = 1 | AVX512_VNNI = 1 | FMA = 1 | NEON = 0 | ARM_FMA = 0 | F16C = 1 | FP16_VA = 0 | WASM_SIMD = 0 | BLAS = 0 | SSE3 = 1 | VSX = 0 | 
+sampling: repeat_last_n = 64, repeat_penalty = 1.100000, presence_penalty = 0.000000, frequency_penalty = 0.000000, top_k = 40, tfs_z = 1.000000, top_p = 0.950000, typical_p = 1.000000, temp = 0.800000, mirostat = 0, mirostat_lr = 0.100000, mirostat_ent = 5.000000
+generate: n_ctx = 2048, n_batch = 512, n_predict = 40, n_keep = 0
+
+
+
+llama_print_timings:        load time =  1439.84 ms
+llama_print_timings:      sample time =    11.15 ms /    40 runs   (    0.28 ms per token)
+llama_print_timings: prompt eval time =   945.55 ms /     2 tokens (  472.78 ms per token)
+llama_print_timings:        eval time = 24650.79 ms /    39 runs   (  632.07 ms per token)
+llama_print_timings:       total time = 26107.10 ms
+------------------- RUN ---------------------
+COMMAND: ./main -t 7 -m ./models/65B/ggml-model-q4_0.bin -n 40 --ctx-size 2048
+main: build = 588 (ac7876a)
+main: seed  = 1685460496
+llama.cpp: loading model from ./models/65B/ggml-model-q4_0.bin
+llama_model_load_internal: format     = ggjt v3 (latest)
+llama_model_load_internal: n_vocab    = 32000
+llama_model_load_internal: n_ctx      = 2048
+llama_model_load_internal: n_embd     = 8192
+llama_model_load_internal: n_mult     = 256
+llama_model_load_internal: n_head     = 64
+llama_model_load_internal: n_layer    = 80
+llama_model_load_internal: n_rot      = 128
+llama_model_load_internal: ftype      = 2 (mostly Q4_0)
+llama_model_load_internal: n_ff       = 22016
+llama_model_load_internal: n_parts    = 1
+llama_model_load_internal: model size = 65B
+llama_model_load_internal: ggml ctx size =    0.18 MB
+llama_model_load_internal: mem required  = 38610.46 MB (+ 5120.00 MB per state)
+.
+llama_init_from_file: kv self size  = 5120.00 MB
+
+system_info: n_threads = 7 / 32 | AVX = 1 | AVX2 = 1 | AVX512 = 1 | AVX512_VBMI = 1 | AVX512_VNNI = 1 | FMA = 1 | NEON = 0 | ARM_FMA = 0 | F16C = 1 | FP16_VA = 0 | WASM_SIMD = 0 | BLAS = 0 | SSE3 = 1 | VSX = 0 | 
+sampling: repeat_last_n = 64, repeat_penalty = 1.100000, presence_penalty = 0.000000, frequency_penalty = 0.000000, top_k = 40, tfs_z = 1.000000, top_p = 0.950000, typical_p = 1.000000, temp = 0.800000, mirostat = 0, mirostat_lr = 0.100000, mirostat_ent = 5.000000
+generate: n_ctx = 2048, n_batch = 512, n_predict = 40, n_keep = 0
+
+
+
+llama_print_timings:        load time =  1447.18 ms
+llama_print_timings:      sample time =    12.82 ms /    40 runs   (    0.32 ms per token)
+llama_print_timings: prompt eval time =   945.72 ms /     2 tokens (  472.86 ms per token)
+llama_print_timings:        eval time = 24718.15 ms /    39 runs   (  633.80 ms per token)
+llama_print_timings:       total time = 26183.48 ms
+------------------- RUN ---------------------
+COMMAND: ./main -t 7 -m ./models/65B/ggml-model-q4_0.bin -n 40 --ctx-size 2048
+main: build = 588 (ac7876a)
+main: seed  = 1685460522
+llama.cpp: loading model from ./models/65B/ggml-model-q4_0.bin
+llama_model_load_internal: format     = ggjt v3 (latest)
+llama_model_load_internal: n_vocab    = 32000
+llama_model_load_internal: n_ctx      = 2048
+llama_model_load_internal: n_embd     = 8192
+llama_model_load_internal: n_mult     = 256
+llama_model_load_internal: n_head     = 64
+llama_model_load_internal: n_layer    = 80
+llama_model_load_internal: n_rot      = 128
+llama_model_load_internal: ftype      = 2 (mostly Q4_0)
+llama_model_load_internal: n_ff       = 22016
+llama_model_load_internal: n_parts    = 1
+llama_model_load_internal: model size = 65B
+llama_model_load_internal: ggml ctx size =    0.18 MB
+llama_model_load_internal: mem required  = 38610.46 MB (+ 5120.00 MB per state)
+.
+llama_init_from_file: kv self size  = 5120.00 MB
+
+system_info: n_threads = 7 / 32 | AVX = 1 | AVX2 = 1 | AVX512 = 1 | AVX512_VBMI = 1 | AVX512_VNNI = 1 | FMA = 1 | NEON = 0 | ARM_FMA = 0 | F16C = 1 | FP16_VA = 0 | WASM_SIMD = 0 | BLAS = 0 | SSE3 = 1 | VSX = 0 | 
+sampling: repeat_last_n = 64, repeat_penalty = 1.100000, presence_penalty = 0.000000, frequency_penalty = 0.000000, top_k = 40, tfs_z = 1.000000, top_p = 0.950000, typical_p = 1.000000, temp = 0.800000, mirostat = 0, mirostat_lr = 0.100000, mirostat_ent = 5.000000
+generate: n_ctx = 2048, n_batch = 512, n_predict = 40, n_keep = 0
+
+
+
+llama_print_timings:        load time =  1441.78 ms
+llama_print_timings:      sample time =    12.77 ms /    40 runs   (    0.32 ms per token)
+llama_print_timings: prompt eval time =   947.83 ms /     2 tokens (  473.91 ms per token)
+llama_print_timings:        eval time = 24636.89 ms /    39 runs   (  631.72 ms per token)
+llama_print_timings:       total time = 26096.76 ms
+------------------- 3RUN ---------------------
+------------------- RUN ---------------------
+COMMAND: ./main -t 8 -m ./models/65B/ggml-model-q4_0.bin -n 40 --ctx-size 2048
+main: build = 588 (ac7876a)
+main: seed  = 1685460549
+llama.cpp: loading model from ./models/65B/ggml-model-q4_0.bin
+llama_model_load_internal: format     = ggjt v3 (latest)
+llama_model_load_internal: n_vocab    = 32000
+llama_model_load_internal: n_ctx      = 2048
+llama_model_load_internal: n_embd     = 8192
+llama_model_load_internal: n_mult     = 256
+llama_model_load_internal: n_head     = 64
+llama_model_load_internal: n_layer    = 80
+llama_model_load_internal: n_rot      = 128
+llama_model_load_internal: ftype      = 2 (mostly Q4_0)
+llama_model_load_internal: n_ff       = 22016
+llama_model_load_internal: n_parts    = 1
+llama_model_load_internal: model size = 65B
+llama_model_load_internal: ggml ctx size =    0.18 MB
+llama_model_load_internal: mem required  = 38610.46 MB (+ 5120.00 MB per state)
+.
+llama_init_from_file: kv self size  = 5120.00 MB
+
+system_info: n_threads = 8 / 32 | AVX = 1 | AVX2 = 1 | AVX512 = 1 | AVX512_VBMI = 1 | AVX512_VNNI = 1 | FMA = 1 | NEON = 0 | ARM_FMA = 0 | F16C = 1 | FP16_VA = 0 | WASM_SIMD = 0 | BLAS = 0 | SSE3 = 1 | VSX = 0 | 
+sampling: repeat_last_n = 64, repeat_penalty = 1.100000, presence_penalty = 0.000000, frequency_penalty = 0.000000, top_k = 40, tfs_z = 1.000000, top_p = 0.950000, typical_p = 1.000000, temp = 0.800000, mirostat = 0, mirostat_lr = 0.100000, mirostat_ent = 5.000000
+generate: n_ctx = 2048, n_batch = 512, n_predict = 40, n_keep = 0
+
+
+
+llama_print_timings:        load time =  1387.13 ms
+llama_print_timings:      sample time =    12.86 ms /    40 runs   (    0.32 ms per token)
+llama_print_timings: prompt eval time =   888.07 ms /     2 tokens (  444.03 ms per token)
+llama_print_timings:        eval time = 24632.27 ms /    39 runs   (  631.60 ms per token)
+llama_print_timings:       total time = 26037.62 ms
+------------------- RUN ---------------------
+COMMAND: ./main -t 8 -m ./models/65B/ggml-model-q4_0.bin -n 40 --ctx-size 2048
+main: build = 588 (ac7876a)
+main: seed  = 1685460575
+llama.cpp: loading model from ./models/65B/ggml-model-q4_0.bin
+llama_model_load_internal: format     = ggjt v3 (latest)
+llama_model_load_internal: n_vocab    = 32000
+llama_model_load_internal: n_ctx      = 2048
+llama_model_load_internal: n_embd     = 8192
+llama_model_load_internal: n_mult     = 256
+llama_model_load_internal: n_head     = 64
+llama_model_load_internal: n_layer    = 80
+llama_model_load_internal: n_rot      = 128
+llama_model_load_internal: ftype      = 2 (mostly Q4_0)
+llama_model_load_internal: n_ff       = 22016
+llama_model_load_internal: n_parts    = 1
+llama_model_load_internal: model size = 65B
+llama_model_load_internal: ggml ctx size =    0.18 MB
+llama_model_load_internal: mem required  = 38610.46 MB (+ 5120.00 MB per state)
+.
+llama_init_from_file: kv self size  = 5120.00 MB
+
+system_info: n_threads = 8 / 32 | AVX = 1 | AVX2 = 1 | AVX512 = 1 | AVX512_VBMI = 1 | AVX512_VNNI = 1 | FMA = 1 | NEON = 0 | ARM_FMA = 0 | F16C = 1 | FP16_VA = 0 | WASM_SIMD = 0 | BLAS = 0 | SSE3 = 1 | VSX = 0 | 
+sampling: repeat_last_n = 64, repeat_penalty = 1.100000, presence_penalty = 0.000000, frequency_penalty = 0.000000, top_k = 40, tfs_z = 1.000000, top_p = 0.950000, typical_p = 1.000000, temp = 0.800000, mirostat = 0, mirostat_lr = 0.100000, mirostat_ent = 5.000000
+generate: n_ctx = 2048, n_batch = 512, n_predict = 40, n_keep = 0
+
+
+
+llama_print_timings:        load time =  1377.48 ms
+llama_print_timings:      sample time =    12.45 ms /    40 runs   (    0.31 ms per token)
+llama_print_timings: prompt eval time =   884.76 ms /     2 tokens (  442.38 ms per token)
+llama_print_timings:        eval time = 24571.31 ms /    39 runs   (  630.03 ms per token)
+llama_print_timings:       total time = 25966.59 ms
+------------------- RUN ---------------------
+COMMAND: ./main -t 8 -m ./models/65B/ggml-model-q4_0.bin -n 40 --ctx-size 2048
+main: build = 588 (ac7876a)
+main: seed  = 1685460601
+llama.cpp: loading model from ./models/65B/ggml-model-q4_0.bin
+llama_model_load_internal: format     = ggjt v3 (latest)
+llama_model_load_internal: n_vocab    = 32000
+llama_model_load_internal: n_ctx      = 2048
+llama_model_load_internal: n_embd     = 8192
+llama_model_load_internal: n_mult     = 256
+llama_model_load_internal: n_head     = 64
+llama_model_load_internal: n_layer    = 80
+llama_model_load_internal: n_rot      = 128
+llama_model_load_internal: ftype      = 2 (mostly Q4_0)
+llama_model_load_internal: n_ff       = 22016
+llama_model_load_internal: n_parts    = 1
+llama_model_load_internal: model size = 65B
+llama_model_load_internal: ggml ctx size =    0.18 MB
+llama_model_load_internal: mem required  = 38610.46 MB (+ 5120.00 MB per state)
+.
+llama_init_from_file: kv self size  = 5120.00 MB
+
+system_info: n_threads = 8 / 32 | AVX = 1 | AVX2 = 1 | AVX512 = 1 | AVX512_VBMI = 1 | AVX512_VNNI = 1 | FMA = 1 | NEON = 0 | ARM_FMA = 0 | F16C = 1 | FP16_VA = 0 | WASM_SIMD = 0 | BLAS = 0 | SSE3 = 1 | VSX = 0 | 
+sampling: repeat_last_n = 64, repeat_penalty = 1.100000, presence_penalty = 0.000000, frequency_penalty = 0.000000, top_k = 40, tfs_z = 1.000000, top_p = 0.950000, typical_p = 1.000000, temp = 0.800000, mirostat = 0, mirostat_lr = 0.100000, mirostat_ent = 5.000000
+generate: n_ctx = 2048, n_batch = 512, n_predict = 40, n_keep = 0
+
+
+
+llama_print_timings:        load time =  1409.26 ms
+llama_print_timings:      sample time =    12.47 ms /    40 runs   (    0.31 ms per token)
+llama_print_timings: prompt eval time =   873.64 ms /     2 tokens (  436.82 ms per token)
+llama_print_timings:        eval time = 24555.73 ms /    39 runs   (  629.63 ms per token)
+llama_print_timings:       total time = 25982.84 ms
+------------------- 3RUN ---------------------
+------------------- RUN ---------------------
+COMMAND: ./main -t 9 -m ./models/65B/ggml-model-q4_0.bin -n 40 --ctx-size 2048
+main: build = 588 (ac7876a)
+main: seed  = 1685460628
+llama.cpp: loading model from ./models/65B/ggml-model-q4_0.bin
+llama_model_load_internal: format     = ggjt v3 (latest)
+llama_model_load_internal: n_vocab    = 32000
+llama_model_load_internal: n_ctx      = 2048
+llama_model_load_internal: n_embd     = 8192
+llama_model_load_internal: n_mult     = 256
+llama_model_load_internal: n_head     = 64
+llama_model_load_internal: n_layer    = 80
+llama_model_load_internal: n_rot      = 128
+llama_model_load_internal: ftype      = 2 (mostly Q4_0)
+llama_model_load_internal: n_ff       = 22016
+llama_model_load_internal: n_parts    = 1
+llama_model_load_internal: model size = 65B
+llama_model_load_internal: ggml ctx size =    0.18 MB
+llama_model_load_internal: mem required  = 38610.46 MB (+ 5120.00 MB per state)
+.
+llama_init_from_file: kv self size  = 5120.00 MB
+
+system_info: n_threads = 9 / 32 | AVX = 1 | AVX2 = 1 | AVX512 = 1 | AVX512_VBMI = 1 | AVX512_VNNI = 1 | FMA = 1 | NEON = 0 | ARM_FMA = 0 | F16C = 1 | FP16_VA = 0 | WASM_SIMD = 0 | BLAS = 0 | SSE3 = 1 | VSX = 0 | 
+sampling: repeat_last_n = 64, repeat_penalty = 1.100000, presence_penalty = 0.000000, frequency_penalty = 0.000000, top_k = 40, tfs_z = 1.000000, top_p = 0.950000, typical_p = 1.000000, temp = 0.800000, mirostat = 0, mirostat_lr = 0.100000, mirostat_ent = 5.000000
+generate: n_ctx = 2048, n_batch = 512, n_predict = 40, n_keep = 0
+
+
+
+llama_print_timings:        load time =  1325.62 ms
+llama_print_timings:      sample time =    12.77 ms /    40 runs   (    0.32 ms per token)
+llama_print_timings: prompt eval time =   830.73 ms /     2 tokens (  415.36 ms per token)
+llama_print_timings:        eval time = 24846.98 ms /    39 runs   (  637.10 ms per token)
+llama_print_timings:       total time = 26190.73 ms
+------------------- RUN ---------------------
+COMMAND: ./main -t 9 -m ./models/65B/ggml-model-q4_0.bin -n 40 --ctx-size 2048
+main: build = 588 (ac7876a)
+main: seed  = 1685460654
+llama.cpp: loading model from ./models/65B/ggml-model-q4_0.bin
+llama_model_load_internal: format     = ggjt v3 (latest)
+llama_model_load_internal: n_vocab    = 32000
+llama_model_load_internal: n_ctx      = 2048
+llama_model_load_internal: n_embd     = 8192
+llama_model_load_internal: n_mult     = 256
+llama_model_load_internal: n_head     = 64
+llama_model_load_internal: n_layer    = 80
+llama_model_load_internal: n_rot      = 128
+llama_model_load_internal: ftype      = 2 (mostly Q4_0)
+llama_model_load_internal: n_ff       = 22016
+llama_model_load_internal: n_parts    = 1
+llama_model_load_internal: model size = 65B
+llama_model_load_internal: ggml ctx size =    0.18 MB
+llama_model_load_internal: mem required  = 38610.46 MB (+ 5120.00 MB per state)
+.
+llama_init_from_file: kv self size  = 5120.00 MB
+
+system_info: n_threads = 9 / 32 | AVX = 1 | AVX2 = 1 | AVX512 = 1 | AVX512_VBMI = 1 | AVX512_VNNI = 1 | FMA = 1 | NEON = 0 | ARM_FMA = 0 | F16C = 1 | FP16_VA = 0 | WASM_SIMD = 0 | BLAS = 0 | SSE3 = 1 | VSX = 0 | 
+sampling: repeat_last_n = 64, repeat_penalty = 1.100000, presence_penalty = 0.000000, frequency_penalty = 0.000000, top_k = 40, tfs_z = 1.000000, top_p = 0.950000, typical_p = 1.000000, temp = 0.800000, mirostat = 0, mirostat_lr = 0.100000, mirostat_ent = 5.000000
+generate: n_ctx = 2048, n_batch = 512, n_predict = 40, n_keep = 0
+
+
+
+llama_print_timings:        load time =  1317.73 ms
+llama_print_timings:      sample time =    12.71 ms /    40 runs   (    0.32 ms per token)
+llama_print_timings: prompt eval time =   823.10 ms /     2 tokens (  411.55 ms per token)
+llama_print_timings:        eval time = 24658.75 ms /    39 runs   (  632.28 ms per token)
+llama_print_timings:       total time = 25994.53 ms
+------------------- RUN ---------------------
+COMMAND: ./main -t 9 -m ./models/65B/ggml-model-q4_0.bin -n 40 --ctx-size 2048
+main: build = 588 (ac7876a)
+main: seed  = 1685460681
+llama.cpp: loading model from ./models/65B/ggml-model-q4_0.bin
+llama_model_load_internal: format     = ggjt v3 (latest)
+llama_model_load_internal: n_vocab    = 32000
+llama_model_load_internal: n_ctx      = 2048
+llama_model_load_internal: n_embd     = 8192
+llama_model_load_internal: n_mult     = 256
+llama_model_load_internal: n_head     = 64
+llama_model_load_internal: n_layer    = 80
+llama_model_load_internal: n_rot      = 128
+llama_model_load_internal: ftype      = 2 (mostly Q4_0)
+llama_model_load_internal: n_ff       = 22016
+llama_model_load_internal: n_parts    = 1
+llama_model_load_internal: model size = 65B
+llama_model_load_internal: ggml ctx size =    0.18 MB
+llama_model_load_internal: mem required  = 38610.46 MB (+ 5120.00 MB per state)
+.
+llama_init_from_file: kv self size  = 5120.00 MB
+
+system_info: n_threads = 9 / 32 | AVX = 1 | AVX2 = 1 | AVX512 = 1 | AVX512_VBMI = 1 | AVX512_VNNI = 1 | FMA = 1 | NEON = 0 | ARM_FMA = 0 | F16C = 1 | FP16_VA = 0 | WASM_SIMD = 0 | BLAS = 0 | SSE3 = 1 | VSX = 0 | 
+sampling: repeat_last_n = 64, repeat_penalty = 1.100000, presence_penalty = 0.000000, frequency_penalty = 0.000000, top_k = 40, tfs_z = 1.000000, top_p = 0.950000, typical_p = 1.000000, temp = 0.800000, mirostat = 0, mirostat_lr = 0.100000, mirostat_ent = 5.000000
+generate: n_ctx = 2048, n_batch = 512, n_predict = 40, n_keep = 0
+
+
+
+llama_print_timings:        load time =  1325.65 ms
+llama_print_timings:      sample time =    12.66 ms /    40 runs   (    0.32 ms per token)
+llama_print_timings: prompt eval time =   820.63 ms /     2 tokens (  410.31 ms per token)
+llama_print_timings:        eval time = 24855.31 ms /    39 runs   (  637.32 ms per token)
+llama_print_timings:       total time = 26198.96 ms
+------------------- 3RUN ---------------------
+------------------- RUN ---------------------
+COMMAND: ./main -t 10 -m ./models/65B/ggml-model-q4_0.bin -n 40 --ctx-size 2048
+main: build = 588 (ac7876a)
+main: seed  = 1685460707
+llama.cpp: loading model from ./models/65B/ggml-model-q4_0.bin
+llama_model_load_internal: format     = ggjt v3 (latest)
+llama_model_load_internal: n_vocab    = 32000
+llama_model_load_internal: n_ctx      = 2048
+llama_model_load_internal: n_embd     = 8192
+llama_model_load_internal: n_mult     = 256
+llama_model_load_internal: n_head     = 64
+llama_model_load_internal: n_layer    = 80
+llama_model_load_internal: n_rot      = 128
+llama_model_load_internal: ftype      = 2 (mostly Q4_0)
+llama_model_load_internal: n_ff       = 22016
+llama_model_load_internal: n_parts    = 1
+llama_model_load_internal: model size = 65B
+llama_model_load_internal: ggml ctx size =    0.18 MB
+llama_model_load_internal: mem required  = 38610.46 MB (+ 5120.00 MB per state)
+.
+llama_init_from_file: kv self size  = 5120.00 MB
+
+system_info: n_threads = 10 / 32 | AVX = 1 | AVX2 = 1 | AVX512 = 1 | AVX512_VBMI = 1 | AVX512_VNNI = 1 | FMA = 1 | NEON = 0 | ARM_FMA = 0 | F16C = 1 | FP16_VA = 0 | WASM_SIMD = 0 | BLAS = 0 | SSE3 = 1 | VSX = 0 | 
+sampling: repeat_last_n = 64, repeat_penalty = 1.100000, presence_penalty = 0.000000, frequency_penalty = 0.000000, top_k = 40, tfs_z = 1.000000, top_p = 0.950000, typical_p = 1.000000, temp = 0.800000, mirostat = 0, mirostat_lr = 0.100000, mirostat_ent = 5.000000
+generate: n_ctx = 2048, n_batch = 512, n_predict = 40, n_keep = 0
+
+
+
+llama_print_timings:        load time =  1294.77 ms
+llama_print_timings:      sample time =    12.73 ms /    40 runs   (    0.32 ms per token)
+llama_print_timings: prompt eval time =   801.41 ms /     2 tokens (  400.71 ms per token)
+llama_print_timings:        eval time = 24764.59 ms /    39 runs   (  634.99 ms per token)
+llama_print_timings:       total time = 26077.47 ms
+------------------- RUN ---------------------
+COMMAND: ./main -t 10 -m ./models/65B/ggml-model-q4_0.bin -n 40 --ctx-size 2048
+main: build = 588 (ac7876a)
+main: seed  = 1685460734
+llama.cpp: loading model from ./models/65B/ggml-model-q4_0.bin
+llama_model_load_internal: format     = ggjt v3 (latest)
+llama_model_load_internal: n_vocab    = 32000
+llama_model_load_internal: n_ctx      = 2048
+llama_model_load_internal: n_embd     = 8192
+llama_model_load_internal: n_mult     = 256
+llama_model_load_internal: n_head     = 64
+llama_model_load_internal: n_layer    = 80
+llama_model_load_internal: n_rot      = 128
+llama_model_load_internal: ftype      = 2 (mostly Q4_0)
+llama_model_load_internal: n_ff       = 22016
+llama_model_load_internal: n_parts    = 1
+llama_model_load_internal: model size = 65B
+llama_model_load_internal: ggml ctx size =    0.18 MB
+llama_model_load_internal: mem required  = 38610.46 MB (+ 5120.00 MB per state)
+.
+llama_init_from_file: kv self size  = 5120.00 MB
+
+system_info: n_threads = 10 / 32 | AVX = 1 | AVX2 = 1 | AVX512 = 1 | AVX512_VBMI = 1 | AVX512_VNNI = 1 | FMA = 1 | NEON = 0 | ARM_FMA = 0 | F16C = 1 | FP16_VA = 0 | WASM_SIMD = 0 | BLAS = 0 | SSE3 = 1 | VSX = 0 | 
+sampling: repeat_last_n = 64, repeat_penalty = 1.100000, presence_penalty = 0.000000, frequency_penalty = 0.000000, top_k = 40, tfs_z = 1.000000, top_p = 0.950000, typical_p = 1.000000, temp = 0.800000, mirostat = 0, mirostat_lr = 0.100000, mirostat_ent = 5.000000
+generate: n_ctx = 2048, n_batch = 512, n_predict = 40, n_keep = 0
+
+
+
+llama_print_timings:        load time =  1305.23 ms
+llama_print_timings:      sample time =    12.36 ms /    40 runs   (    0.31 ms per token)
+llama_print_timings: prompt eval time =   803.28 ms /     2 tokens (  401.64 ms per token)
+llama_print_timings:        eval time = 24857.21 ms /    39 runs   (  637.36 ms per token)
+llama_print_timings:       total time = 26180.17 ms
+------------------- RUN ---------------------
+COMMAND: ./main -t 10 -m ./models/65B/ggml-model-q4_0.bin -n 40 --ctx-size 2048
+main: build = 588 (ac7876a)
+main: seed  = 1685460760
+llama.cpp: loading model from ./models/65B/ggml-model-q4_0.bin
+llama_model_load_internal: format     = ggjt v3 (latest)
+llama_model_load_internal: n_vocab    = 32000
+llama_model_load_internal: n_ctx      = 2048
+llama_model_load_internal: n_embd     = 8192
+llama_model_load_internal: n_mult     = 256
+llama_model_load_internal: n_head     = 64
+llama_model_load_internal: n_layer    = 80
+llama_model_load_internal: n_rot      = 128
+llama_model_load_internal: ftype      = 2 (mostly Q4_0)
+llama_model_load_internal: n_ff       = 22016
+llama_model_load_internal: n_parts    = 1
+llama_model_load_internal: model size = 65B
+llama_model_load_internal: ggml ctx size =    0.18 MB
+llama_model_load_internal: mem required  = 38610.46 MB (+ 5120.00 MB per state)
+.
+llama_init_from_file: kv self size  = 5120.00 MB
+
+system_info: n_threads = 10 / 32 | AVX = 1 | AVX2 = 1 | AVX512 = 1 | AVX512_VBMI = 1 | AVX512_VNNI = 1 | FMA = 1 | NEON = 0 | ARM_FMA = 0 | F16C = 1 | FP16_VA = 0 | WASM_SIMD = 0 | BLAS = 0 | SSE3 = 1 | VSX = 0 | 
+sampling: repeat_last_n = 64, repeat_penalty = 1.100000, presence_penalty = 0.000000, frequency_penalty = 0.000000, top_k = 40, tfs_z = 1.000000, top_p = 0.950000, typical_p = 1.000000, temp = 0.800000, mirostat = 0, mirostat_lr = 0.100000, mirostat_ent = 5.000000
+generate: n_ctx = 2048, n_batch = 512, n_predict = 40, n_keep = 0
+
+
+
+llama_print_timings:        load time =  1294.47 ms
+llama_print_timings:      sample time =    12.93 ms /    40 runs   (    0.32 ms per token)
+llama_print_timings: prompt eval time =   801.00 ms /     2 tokens (  400.50 ms per token)
+llama_print_timings:        eval time = 24765.96 ms /    39 runs   (  635.02 ms per token)
+llama_print_timings:       total time = 26078.69 ms
+------------------- 3RUN ---------------------
+------------------- RUN ---------------------
+COMMAND: ./main -t 11 -m ./models/65B/ggml-model-q4_0.bin -n 40 --ctx-size 2048
+main: build = 588 (ac7876a)
+main: seed  = 1685460786
+llama.cpp: loading model from ./models/65B/ggml-model-q4_0.bin
+llama_model_load_internal: format     = ggjt v3 (latest)
+llama_model_load_internal: n_vocab    = 32000
+llama_model_load_internal: n_ctx      = 2048
+llama_model_load_internal: n_embd     = 8192
+llama_model_load_internal: n_mult     = 256
+llama_model_load_internal: n_head     = 64
+llama_model_load_internal: n_layer    = 80
+llama_model_load_internal: n_rot      = 128
+llama_model_load_internal: ftype      = 2 (mostly Q4_0)
+llama_model_load_internal: n_ff       = 22016
+llama_model_load_internal: n_parts    = 1
+llama_model_load_internal: model size = 65B
+llama_model_load_internal: ggml ctx size =    0.18 MB
+llama_model_load_internal: mem required  = 38610.46 MB (+ 5120.00 MB per state)
+.
+llama_init_from_file: kv self size  = 5120.00 MB
+
+system_info: n_threads = 11 / 32 | AVX = 1 | AVX2 = 1 | AVX512 = 1 | AVX512_VBMI = 1 | AVX512_VNNI = 1 | FMA = 1 | NEON = 0 | ARM_FMA = 0 | F16C = 1 | FP16_VA = 0 | WASM_SIMD = 0 | BLAS = 0 | SSE3 = 1 | VSX = 0 | 
+sampling: repeat_last_n = 64, repeat_penalty = 1.100000, presence_penalty = 0.000000, frequency_penalty = 0.000000, top_k = 40, tfs_z = 1.000000, top_p = 0.950000, typical_p = 1.000000, temp = 0.800000, mirostat = 0, mirostat_lr = 0.100000, mirostat_ent = 5.000000
+generate: n_ctx = 2048, n_batch = 512, n_predict = 40, n_keep = 0
+
+
+
+llama_print_timings:        load time =  1289.69 ms
+llama_print_timings:      sample time =    12.63 ms /    40 runs   (    0.32 ms per token)
+llama_print_timings: prompt eval time =   790.36 ms /     2 tokens (  395.18 ms per token)
+llama_print_timings:        eval time = 25077.12 ms /    39 runs   (  643.00 ms per token)
+llama_print_timings:       total time = 26384.84 ms
+------------------- RUN ---------------------
+COMMAND: ./main -t 11 -m ./models/65B/ggml-model-q4_0.bin -n 40 --ctx-size 2048
+main: build = 588 (ac7876a)
+main: seed  = 1685460813
+llama.cpp: loading model from ./models/65B/ggml-model-q4_0.bin
+llama_model_load_internal: format     = ggjt v3 (latest)
+llama_model_load_internal: n_vocab    = 32000
+llama_model_load_internal: n_ctx      = 2048
+llama_model_load_internal: n_embd     = 8192
+llama_model_load_internal: n_mult     = 256
+llama_model_load_internal: n_head     = 64
+llama_model_load_internal: n_layer    = 80
+llama_model_load_internal: n_rot      = 128
+llama_model_load_internal: ftype      = 2 (mostly Q4_0)
+llama_model_load_internal: n_ff       = 22016
+llama_model_load_internal: n_parts    = 1
+llama_model_load_internal: model size = 65B
+llama_model_load_internal: ggml ctx size =    0.18 MB
+llama_model_load_internal: mem required  = 38610.46 MB (+ 5120.00 MB per state)
+.
+llama_init_from_file: kv self size  = 5120.00 MB
+
+system_info: n_threads = 11 / 32 | AVX = 1 | AVX2 = 1 | AVX512 = 1 | AVX512_VBMI = 1 | AVX512_VNNI = 1 | FMA = 1 | NEON = 0 | ARM_FMA = 0 | F16C = 1 | FP16_VA = 0 | WASM_SIMD = 0 | BLAS = 0 | SSE3 = 1 | VSX = 0 | 
+sampling: repeat_last_n = 64, repeat_penalty = 1.100000, presence_penalty = 0.000000, frequency_penalty = 0.000000, top_k = 40, tfs_z = 1.000000, top_p = 0.950000, typical_p = 1.000000, temp = 0.800000, mirostat = 0, mirostat_lr = 0.100000, mirostat_ent = 5.000000
+generate: n_ctx = 2048, n_batch = 512, n_predict = 40, n_keep = 0
+
+
+
+llama_print_timings:        load time =  1296.15 ms
+llama_print_timings:      sample time =    12.27 ms /    40 runs   (    0.31 ms per token)
+llama_print_timings: prompt eval time =   775.64 ms /     2 tokens (  387.82 ms per token)
+llama_print_timings:        eval time = 24646.93 ms /    39 runs   (  631.97 ms per token)
+llama_print_timings:       total time = 25960.72 ms
+------------------- RUN ---------------------
+COMMAND: ./main -t 11 -m ./models/65B/ggml-model-q4_0.bin -n 40 --ctx-size 2048
+main: build = 588 (ac7876a)
+main: seed  = 1685460839
+llama.cpp: loading model from ./models/65B/ggml-model-q4_0.bin
+llama_model_load_internal: format     = ggjt v3 (latest)
+llama_model_load_internal: n_vocab    = 32000
+llama_model_load_internal: n_ctx      = 2048
+llama_model_load_internal: n_embd     = 8192
+llama_model_load_internal: n_mult     = 256
+llama_model_load_internal: n_head     = 64
+llama_model_load_internal: n_layer    = 80
+llama_model_load_internal: n_rot      = 128
+llama_model_load_internal: ftype      = 2 (mostly Q4_0)
+llama_model_load_internal: n_ff       = 22016
+llama_model_load_internal: n_parts    = 1
+llama_model_load_internal: model size = 65B
+llama_model_load_internal: ggml ctx size =    0.18 MB
+llama_model_load_internal: mem required  = 38610.46 MB (+ 5120.00 MB per state)
+.
+llama_init_from_file: kv self size  = 5120.00 MB
+
+system_info: n_threads = 11 / 32 | AVX = 1 | AVX2 = 1 | AVX512 = 1 | AVX512_VBMI = 1 | AVX512_VNNI = 1 | FMA = 1 | NEON = 0 | ARM_FMA = 0 | F16C = 1 | FP16_VA = 0 | WASM_SIMD = 0 | BLAS = 0 | SSE3 = 1 | VSX = 0 | 
+sampling: repeat_last_n = 64, repeat_penalty = 1.100000, presence_penalty = 0.000000, frequency_penalty = 0.000000, top_k = 40, tfs_z = 1.000000, top_p = 0.950000, typical_p = 1.000000, temp = 0.800000, mirostat = 0, mirostat_lr = 0.100000, mirostat_ent = 5.000000
+generate: n_ctx = 2048, n_batch = 512, n_predict = 40, n_keep = 0
+
+
+
+llama_print_timings:        load time =  1276.26 ms
+llama_print_timings:      sample time =    12.75 ms /    40 runs   (    0.32 ms per token)
+llama_print_timings: prompt eval time =   782.52 ms /     2 tokens (  391.26 ms per token)
+llama_print_timings:        eval time = 24961.88 ms /    39 runs   (  640.05 ms per token)
+llama_print_timings:       total time = 26256.27 ms
+------------------- 3RUN ---------------------
+------------------- RUN ---------------------
+COMMAND: ./main -t 12 -m ./models/65B/ggml-model-q4_0.bin -n 40 --ctx-size 2048
+main: build = 588 (ac7876a)
+main: seed  = 1685460866
+llama.cpp: loading model from ./models/65B/ggml-model-q4_0.bin
+llama_model_load_internal: format     = ggjt v3 (latest)
+llama_model_load_internal: n_vocab    = 32000
+llama_model_load_internal: n_ctx      = 2048
+llama_model_load_internal: n_embd     = 8192
+llama_model_load_internal: n_mult     = 256
+llama_model_load_internal: n_head     = 64
+llama_model_load_internal: n_layer    = 80
+llama_model_load_internal: n_rot      = 128
+llama_model_load_internal: ftype      = 2 (mostly Q4_0)
+llama_model_load_internal: n_ff       = 22016
+llama_model_load_internal: n_parts    = 1
+llama_model_load_internal: model size = 65B
+llama_model_load_internal: ggml ctx size =    0.18 MB
+llama_model_load_internal: mem required  = 38610.46 MB (+ 5120.00 MB per state)
+.
+llama_init_from_file: kv self size  = 5120.00 MB
+
+system_info: n_threads = 12 / 32 | AVX = 1 | AVX2 = 1 | AVX512 = 1 | AVX512_VBMI = 1 | AVX512_VNNI = 1 | FMA = 1 | NEON = 0 | ARM_FMA = 0 | F16C = 1 | FP16_VA = 0 | WASM_SIMD = 0 | BLAS = 0 | SSE3 = 1 | VSX = 0 | 
+sampling: repeat_last_n = 64, repeat_penalty = 1.100000, presence_penalty = 0.000000, frequency_penalty = 0.000000, top_k = 40, tfs_z = 1.000000, top_p = 0.950000, typical_p = 1.000000, temp = 0.800000, mirostat = 0, mirostat_lr = 0.100000, mirostat_ent = 5.000000
+generate: n_ctx = 2048, n_batch = 512, n_predict = 40, n_keep = 0
+
+
+
+llama_print_timings:        load time =  1283.54 ms
+llama_print_timings:      sample time =    12.56 ms /    40 runs   (    0.31 ms per token)
+llama_print_timings: prompt eval time =   783.32 ms /     2 tokens (  391.66 ms per token)
+llama_print_timings:        eval time = 25081.76 ms /    39 runs   (  643.12 ms per token)
+llama_print_timings:       total time = 26383.19 ms
+------------------- RUN ---------------------
+COMMAND: ./main -t 12 -m ./models/65B/ggml-model-q4_0.bin -n 40 --ctx-size 2048
+main: build = 588 (ac7876a)
+main: seed  = 1685460893
+llama.cpp: loading model from ./models/65B/ggml-model-q4_0.bin
+llama_model_load_internal: format     = ggjt v3 (latest)
+llama_model_load_internal: n_vocab    = 32000
+llama_model_load_internal: n_ctx      = 2048
+llama_model_load_internal: n_embd     = 8192
+llama_model_load_internal: n_mult     = 256
+llama_model_load_internal: n_head     = 64
+llama_model_load_internal: n_layer    = 80
+llama_model_load_internal: n_rot      = 128
+llama_model_load_internal: ftype      = 2 (mostly Q4_0)
+llama_model_load_internal: n_ff       = 22016
+llama_model_load_internal: n_parts    = 1
+llama_model_load_internal: model size = 65B
+llama_model_load_internal: ggml ctx size =    0.18 MB
+llama_model_load_internal: mem required  = 38610.46 MB (+ 5120.00 MB per state)
+.
+llama_init_from_file: kv self size  = 5120.00 MB
+
+system_info: n_threads = 12 / 32 | AVX = 1 | AVX2 = 1 | AVX512 = 1 | AVX512_VBMI = 1 | AVX512_VNNI = 1 | FMA = 1 | NEON = 0 | ARM_FMA = 0 | F16C = 1 | FP16_VA = 0 | WASM_SIMD = 0 | BLAS = 0 | SSE3 = 1 | VSX = 0 | 
+sampling: repeat_last_n = 64, repeat_penalty = 1.100000, presence_penalty = 0.000000, frequency_penalty = 0.000000, top_k = 40, tfs_z = 1.000000, top_p = 0.950000, typical_p = 1.000000, temp = 0.800000, mirostat = 0, mirostat_lr = 0.100000, mirostat_ent = 5.000000
+generate: n_ctx = 2048, n_batch = 512, n_predict = 40, n_keep = 0
+
+
+
+llama_print_timings:        load time =  1283.54 ms
+llama_print_timings:      sample time =    12.09 ms /    40 runs   (    0.30 ms per token)
+llama_print_timings: prompt eval time =   789.14 ms /     2 tokens (  394.57 ms per token)
+llama_print_timings:        eval time = 25067.15 ms /    39 runs   (  642.75 ms per token)
+llama_print_timings:       total time = 26368.24 ms
+------------------- RUN ---------------------
+COMMAND: ./main -t 12 -m ./models/65B/ggml-model-q4_0.bin -n 40 --ctx-size 2048
+main: build = 588 (ac7876a)
+main: seed  = 1685460919
+llama.cpp: loading model from ./models/65B/ggml-model-q4_0.bin
+llama_model_load_internal: format     = ggjt v3 (latest)
+llama_model_load_internal: n_vocab    = 32000
+llama_model_load_internal: n_ctx      = 2048
+llama_model_load_internal: n_embd     = 8192
+llama_model_load_internal: n_mult     = 256
+llama_model_load_internal: n_head     = 64
+llama_model_load_internal: n_layer    = 80
+llama_model_load_internal: n_rot      = 128
+llama_model_load_internal: ftype      = 2 (mostly Q4_0)
+llama_model_load_internal: n_ff       = 22016
+llama_model_load_internal: n_parts    = 1
+llama_model_load_internal: model size = 65B
+llama_model_load_internal: ggml ctx size =    0.18 MB
+llama_model_load_internal: mem required  = 38610.46 MB (+ 5120.00 MB per state)
+.
+llama_init_from_file: kv self size  = 5120.00 MB
+
+system_info: n_threads = 12 / 32 | AVX = 1 | AVX2 = 1 | AVX512 = 1 | AVX512_VBMI = 1 | AVX512_VNNI = 1 | FMA = 1 | NEON = 0 | ARM_FMA = 0 | F16C = 1 | FP16_VA = 0 | WASM_SIMD = 0 | BLAS = 0 | SSE3 = 1 | VSX = 0 | 
+sampling: repeat_last_n = 64, repeat_penalty = 1.100000, presence_penalty = 0.000000, frequency_penalty = 0.000000, top_k = 40, tfs_z = 1.000000, top_p = 0.950000, typical_p = 1.000000, temp = 0.800000, mirostat = 0, mirostat_lr = 0.100000, mirostat_ent = 5.000000
+generate: n_ctx = 2048, n_batch = 512, n_predict = 40, n_keep = 0
+
+
+
+llama_print_timings:        load time =  1276.23 ms
+llama_print_timings:      sample time =    12.93 ms /    40 runs   (    0.32 ms per token)
+llama_print_timings: prompt eval time =   780.82 ms /     2 tokens (  390.41 ms per token)
+llama_print_timings:        eval time = 24782.42 ms /    39 runs   (  635.45 ms per token)
+llama_print_timings:       total time = 26076.96 ms
+------------------- 3RUN ---------------------
+------------------- RUN ---------------------
+COMMAND: ./main -t 13 -m ./models/65B/ggml-model-q4_0.bin -n 40 --ctx-size 2048
+main: build = 588 (ac7876a)
+main: seed  = 1685460946
+llama.cpp: loading model from ./models/65B/ggml-model-q4_0.bin
+llama_model_load_internal: format     = ggjt v3 (latest)
+llama_model_load_internal: n_vocab    = 32000
+llama_model_load_internal: n_ctx      = 2048
+llama_model_load_internal: n_embd     = 8192
+llama_model_load_internal: n_mult     = 256
+llama_model_load_internal: n_head     = 64
+llama_model_load_internal: n_layer    = 80
+llama_model_load_internal: n_rot      = 128
+llama_model_load_internal: ftype      = 2 (mostly Q4_0)
+llama_model_load_internal: n_ff       = 22016
+llama_model_load_internal: n_parts    = 1
+llama_model_load_internal: model size = 65B
+llama_model_load_internal: ggml ctx size =    0.18 MB
+llama_model_load_internal: mem required  = 38610.46 MB (+ 5120.00 MB per state)
+.
+llama_init_from_file: kv self size  = 5120.00 MB
+
+system_info: n_threads = 13 / 32 | AVX = 1 | AVX2 = 1 | AVX512 = 1 | AVX512_VBMI = 1 | AVX512_VNNI = 1 | FMA = 1 | NEON = 0 | ARM_FMA = 0 | F16C = 1 | FP16_VA = 0 | WASM_SIMD = 0 | BLAS = 0 | SSE3 = 1 | VSX = 0 | 
+sampling: repeat_last_n = 64, repeat_penalty = 1.100000, presence_penalty = 0.000000, frequency_penalty = 0.000000, top_k = 40, tfs_z = 1.000000, top_p = 0.950000, typical_p = 1.000000, temp = 0.800000, mirostat = 0, mirostat_lr = 0.100000, mirostat_ent = 5.000000
+generate: n_ctx = 2048, n_batch = 512, n_predict = 40, n_keep = 0
+
+
+
+llama_print_timings:        load time =  1265.18 ms
+llama_print_timings:      sample time =    11.95 ms /    40 runs   (    0.30 ms per token)
+llama_print_timings: prompt eval time =   771.01 ms /     2 tokens (  385.51 ms per token)
+llama_print_timings:        eval time = 24810.78 ms /    39 runs   (  636.17 ms per token)
+llama_print_timings:       total time = 26093.30 ms
+------------------- RUN ---------------------
+COMMAND: ./main -t 13 -m ./models/65B/ggml-model-q4_0.bin -n 40 --ctx-size 2048
+main: build = 588 (ac7876a)
+main: seed  = 1685460972
+llama.cpp: loading model from ./models/65B/ggml-model-q4_0.bin
+llama_model_load_internal: format     = ggjt v3 (latest)
+llama_model_load_internal: n_vocab    = 32000
+llama_model_load_internal: n_ctx      = 2048
+llama_model_load_internal: n_embd     = 8192
+llama_model_load_internal: n_mult     = 256
+llama_model_load_internal: n_head     = 64
+llama_model_load_internal: n_layer    = 80
+llama_model_load_internal: n_rot      = 128
+llama_model_load_internal: ftype      = 2 (mostly Q4_0)
+llama_model_load_internal: n_ff       = 22016
+llama_model_load_internal: n_parts    = 1
+llama_model_load_internal: model size = 65B
+llama_model_load_internal: ggml ctx size =    0.18 MB
+llama_model_load_internal: mem required  = 38610.46 MB (+ 5120.00 MB per state)
+.
+llama_init_from_file: kv self size  = 5120.00 MB
+
+system_info: n_threads = 13 / 32 | AVX = 1 | AVX2 = 1 | AVX512 = 1 | AVX512_VBMI = 1 | AVX512_VNNI = 1 | FMA = 1 | NEON = 0 | ARM_FMA = 0 | F16C = 1 | FP16_VA = 0 | WASM_SIMD = 0 | BLAS = 0 | SSE3 = 1 | VSX = 0 | 
+sampling: repeat_last_n = 64, repeat_penalty = 1.100000, presence_penalty = 0.000000, frequency_penalty = 0.000000, top_k = 40, tfs_z = 1.000000, top_p = 0.950000, typical_p = 1.000000, temp = 0.800000, mirostat = 0, mirostat_lr = 0.100000, mirostat_ent = 5.000000
+generate: n_ctx = 2048, n_batch = 512, n_predict = 40, n_keep = 0
+
+
+
+llama_print_timings:        load time =  1303.56 ms
+llama_print_timings:      sample time =    12.81 ms /    40 runs   (    0.32 ms per token)
+llama_print_timings: prompt eval time =   781.16 ms /     2 tokens (  390.58 ms per token)
+llama_print_timings:        eval time = 25053.40 ms /    39 runs   (  642.39 ms per token)
+llama_print_timings:       total time = 26375.12 ms
+------------------- RUN ---------------------
+COMMAND: ./main -t 13 -m ./models/65B/ggml-model-q4_0.bin -n 40 --ctx-size 2048
+main: build = 588 (ac7876a)
+main: seed  = 1685460999
+llama.cpp: loading model from ./models/65B/ggml-model-q4_0.bin
+llama_model_load_internal: format     = ggjt v3 (latest)
+llama_model_load_internal: n_vocab    = 32000
+llama_model_load_internal: n_ctx      = 2048
+llama_model_load_internal: n_embd     = 8192
+llama_model_load_internal: n_mult     = 256
+llama_model_load_internal: n_head     = 64
+llama_model_load_internal: n_layer    = 80
+llama_model_load_internal: n_rot      = 128
+llama_model_load_internal: ftype      = 2 (mostly Q4_0)
+llama_model_load_internal: n_ff       = 22016
+llama_model_load_internal: n_parts    = 1
+llama_model_load_internal: model size = 65B
+llama_model_load_internal: ggml ctx size =    0.18 MB
+llama_model_load_internal: mem required  = 38610.46 MB (+ 5120.00 MB per state)
+.
+llama_init_from_file: kv self size  = 5120.00 MB
+
+system_info: n_threads = 13 / 32 | AVX = 1 | AVX2 = 1 | AVX512 = 1 | AVX512_VBMI = 1 | AVX512_VNNI = 1 | FMA = 1 | NEON = 0 | ARM_FMA = 0 | F16C = 1 | FP16_VA = 0 | WASM_SIMD = 0 | BLAS = 0 | SSE3 = 1 | VSX = 0 | 
+sampling: repeat_last_n = 64, repeat_penalty = 1.100000, presence_penalty = 0.000000, frequency_penalty = 0.000000, top_k = 40, tfs_z = 1.000000, top_p = 0.950000, typical_p = 1.000000, temp = 0.800000, mirostat = 0, mirostat_lr = 0.100000, mirostat_ent = 5.000000
+generate: n_ctx = 2048, n_batch = 512, n_predict = 40, n_keep = 0
+
+
+
+llama_print_timings:        load time =  1288.75 ms
+llama_print_timings:      sample time =    12.38 ms /    40 runs   (    0.31 ms per token)
+llama_print_timings: prompt eval time =   775.55 ms /     2 tokens (  387.77 ms per token)
+llama_print_timings:        eval time = 25155.16 ms /    39 runs   (  645.00 ms per token)
+llama_print_timings:       total time = 26461.77 ms
+------------------- 3RUN ---------------------
+------------------- RUN ---------------------
+COMMAND: ./main -t 14 -m ./models/65B/ggml-model-q4_0.bin -n 40 --ctx-size 2048
+main: build = 588 (ac7876a)
+main: seed  = 1685461026
+llama.cpp: loading model from ./models/65B/ggml-model-q4_0.bin
+llama_model_load_internal: format     = ggjt v3 (latest)
+llama_model_load_internal: n_vocab    = 32000
+llama_model_load_internal: n_ctx      = 2048
+llama_model_load_internal: n_embd     = 8192
+llama_model_load_internal: n_mult     = 256
+llama_model_load_internal: n_head     = 64
+llama_model_load_internal: n_layer    = 80
+llama_model_load_internal: n_rot      = 128
+llama_model_load_internal: ftype      = 2 (mostly Q4_0)
+llama_model_load_internal: n_ff       = 22016
+llama_model_load_internal: n_parts    = 1
+llama_model_load_internal: model size = 65B
+llama_model_load_internal: ggml ctx size =    0.18 MB
+llama_model_load_internal: mem required  = 38610.46 MB (+ 5120.00 MB per state)
+.
+llama_init_from_file: kv self size  = 5120.00 MB
+
+system_info: n_threads = 14 / 32 | AVX = 1 | AVX2 = 1 | AVX512 = 1 | AVX512_VBMI = 1 | AVX512_VNNI = 1 | FMA = 1 | NEON = 0 | ARM_FMA = 0 | F16C = 1 | FP16_VA = 0 | WASM_SIMD = 0 | BLAS = 0 | SSE3 = 1 | VSX = 0 | 
+sampling: repeat_last_n = 64, repeat_penalty = 1.100000, presence_penalty = 0.000000, frequency_penalty = 0.000000, top_k = 40, tfs_z = 1.000000, top_p = 0.950000, typical_p = 1.000000, temp = 0.800000, mirostat = 0, mirostat_lr = 0.100000, mirostat_ent = 5.000000
+generate: n_ctx = 2048, n_batch = 512, n_predict = 40, n_keep = 0
+
+
+
+llama_print_timings:        load time =  1294.36 ms
+llama_print_timings:      sample time =    12.13 ms /    40 runs   (    0.30 ms per token)
+llama_print_timings: prompt eval time =   787.29 ms /     2 tokens (  393.64 ms per token)
+llama_print_timings:        eval time = 25398.75 ms /    39 runs   (  651.25 ms per token)
+llama_print_timings:       total time = 26710.70 ms
+------------------- RUN ---------------------
+COMMAND: ./main -t 14 -m ./models/65B/ggml-model-q4_0.bin -n 40 --ctx-size 2048
+main: build = 588 (ac7876a)
+main: seed  = 1685461053
+llama.cpp: loading model from ./models/65B/ggml-model-q4_0.bin
+llama_model_load_internal: format     = ggjt v3 (latest)
+llama_model_load_internal: n_vocab    = 32000
+llama_model_load_internal: n_ctx      = 2048
+llama_model_load_internal: n_embd     = 8192
+llama_model_load_internal: n_mult     = 256
+llama_model_load_internal: n_head     = 64
+llama_model_load_internal: n_layer    = 80
+llama_model_load_internal: n_rot      = 128
+llama_model_load_internal: ftype      = 2 (mostly Q4_0)
+llama_model_load_internal: n_ff       = 22016
+llama_model_load_internal: n_parts    = 1
+llama_model_load_internal: model size = 65B
+llama_model_load_internal: ggml ctx size =    0.18 MB
+llama_model_load_internal: mem required  = 38610.46 MB (+ 5120.00 MB per state)
+.
+llama_init_from_file: kv self size  = 5120.00 MB
+
+system_info: n_threads = 14 / 32 | AVX = 1 | AVX2 = 1 | AVX512 = 1 | AVX512_VBMI = 1 | AVX512_VNNI = 1 | FMA = 1 | NEON = 0 | ARM_FMA = 0 | F16C = 1 | FP16_VA = 0 | WASM_SIMD = 0 | BLAS = 0 | SSE3 = 1 | VSX = 0 | 
+sampling: repeat_last_n = 64, repeat_penalty = 1.100000, presence_penalty = 0.000000, frequency_penalty = 0.000000, top_k = 40, tfs_z = 1.000000, top_p = 0.950000, typical_p = 1.000000, temp = 0.800000, mirostat = 0, mirostat_lr = 0.100000, mirostat_ent = 5.000000
+generate: n_ctx = 2048, n_batch = 512, n_predict = 40, n_keep = 0
+
+
+
+llama_print_timings:        load time =  1286.96 ms
+llama_print_timings:      sample time =    12.86 ms /    40 runs   (    0.32 ms per token)
+llama_print_timings: prompt eval time =   786.15 ms /     2 tokens (  393.08 ms per token)
+llama_print_timings:        eval time = 25329.57 ms /    39 runs   (  649.48 ms per token)
+llama_print_timings:       total time = 26634.77 ms
+------------------- RUN ---------------------
+COMMAND: ./main -t 14 -m ./models/65B/ggml-model-q4_0.bin -n 40 --ctx-size 2048
+main: build = 588 (ac7876a)
+main: seed  = 1685461080
+llama.cpp: loading model from ./models/65B/ggml-model-q4_0.bin
+llama_model_load_internal: format     = ggjt v3 (latest)
+llama_model_load_internal: n_vocab    = 32000
+llama_model_load_internal: n_ctx      = 2048
+llama_model_load_internal: n_embd     = 8192
+llama_model_load_internal: n_mult     = 256
+llama_model_load_internal: n_head     = 64
+llama_model_load_internal: n_layer    = 80
+llama_model_load_internal: n_rot      = 128
+llama_model_load_internal: ftype      = 2 (mostly Q4_0)
+llama_model_load_internal: n_ff       = 22016
+llama_model_load_internal: n_parts    = 1
+llama_model_load_internal: model size = 65B
+llama_model_load_internal: ggml ctx size =    0.18 MB
+llama_model_load_internal: mem required  = 38610.46 MB (+ 5120.00 MB per state)
+.
+llama_init_from_file: kv self size  = 5120.00 MB
+
+system_info: n_threads = 14 / 32 | AVX = 1 | AVX2 = 1 | AVX512 = 1 | AVX512_VBMI = 1 | AVX512_VNNI = 1 | FMA = 1 | NEON = 0 | ARM_FMA = 0 | F16C = 1 | FP16_VA = 0 | WASM_SIMD = 0 | BLAS = 0 | SSE3 = 1 | VSX = 0 | 
+sampling: repeat_last_n = 64, repeat_penalty = 1.100000, presence_penalty = 0.000000, frequency_penalty = 0.000000, top_k = 40, tfs_z = 1.000000, top_p = 0.950000, typical_p = 1.000000, temp = 0.800000, mirostat = 0, mirostat_lr = 0.100000, mirostat_ent = 5.000000
+generate: n_ctx = 2048, n_batch = 512, n_predict = 40, n_keep = 0
+
+
+
+llama_print_timings:        load time =  1292.25 ms
+llama_print_timings:      sample time =    12.59 ms /    40 runs   (    0.31 ms per token)
+llama_print_timings: prompt eval time =   786.31 ms /     2 tokens (  393.16 ms per token)
+llama_print_timings:        eval time = 25290.74 ms /    39 runs   (  648.48 ms per token)
+llama_print_timings:       total time = 26601.02 ms
+------------------- 3RUN ---------------------
+------------------- RUN ---------------------
+COMMAND: ./main -t 15 -m ./models/65B/ggml-model-q4_0.bin -n 40 --ctx-size 2048
+main: build = 588 (ac7876a)
+main: seed  = 1685461107
+llama.cpp: loading model from ./models/65B/ggml-model-q4_0.bin
+llama_model_load_internal: format     = ggjt v3 (latest)
+llama_model_load_internal: n_vocab    = 32000
+llama_model_load_internal: n_ctx      = 2048
+llama_model_load_internal: n_embd     = 8192
+llama_model_load_internal: n_mult     = 256
+llama_model_load_internal: n_head     = 64
+llama_model_load_internal: n_layer    = 80
+llama_model_load_internal: n_rot      = 128
+llama_model_load_internal: ftype      = 2 (mostly Q4_0)
+llama_model_load_internal: n_ff       = 22016
+llama_model_load_internal: n_parts    = 1
+llama_model_load_internal: model size = 65B
+llama_model_load_internal: ggml ctx size =    0.18 MB
+llama_model_load_internal: mem required  = 38610.46 MB (+ 5120.00 MB per state)
+.
+llama_init_from_file: kv self size  = 5120.00 MB
+
+system_info: n_threads = 15 / 32 | AVX = 1 | AVX2 = 1 | AVX512 = 1 | AVX512_VBMI = 1 | AVX512_VNNI = 1 | FMA = 1 | NEON = 0 | ARM_FMA = 0 | F16C = 1 | FP16_VA = 0 | WASM_SIMD = 0 | BLAS = 0 | SSE3 = 1 | VSX = 0 | 
+sampling: repeat_last_n = 64, repeat_penalty = 1.100000, presence_penalty = 0.000000, frequency_penalty = 0.000000, top_k = 40, tfs_z = 1.000000, top_p = 0.950000, typical_p = 1.000000, temp = 0.800000, mirostat = 0, mirostat_lr = 0.100000, mirostat_ent = 5.000000
+generate: n_ctx = 2048, n_batch = 512, n_predict = 40, n_keep = 0
+
+
+
+llama_print_timings:        load time =  1287.90 ms
+llama_print_timings:      sample time =    12.56 ms /    40 runs   (    0.31 ms per token)
+llama_print_timings: prompt eval time =   783.46 ms /     2 tokens (  391.73 ms per token)
+llama_print_timings:        eval time = 25260.33 ms /    39 runs   (  647.70 ms per token)
+llama_print_timings:       total time = 26566.19 ms
+------------------- RUN ---------------------
+COMMAND: ./main -t 15 -m ./models/65B/ggml-model-q4_0.bin -n 40 --ctx-size 2048
+main: build = 588 (ac7876a)
+main: seed  = 1685461134
+llama.cpp: loading model from ./models/65B/ggml-model-q4_0.bin
+llama_model_load_internal: format     = ggjt v3 (latest)
+llama_model_load_internal: n_vocab    = 32000
+llama_model_load_internal: n_ctx      = 2048
+llama_model_load_internal: n_embd     = 8192
+llama_model_load_internal: n_mult     = 256
+llama_model_load_internal: n_head     = 64
+llama_model_load_internal: n_layer    = 80
+llama_model_load_internal: n_rot      = 128
+llama_model_load_internal: ftype      = 2 (mostly Q4_0)
+llama_model_load_internal: n_ff       = 22016
+llama_model_load_internal: n_parts    = 1
+llama_model_load_internal: model size = 65B
+llama_model_load_internal: ggml ctx size =    0.18 MB
+llama_model_load_internal: mem required  = 38610.46 MB (+ 5120.00 MB per state)
+.
+llama_init_from_file: kv self size  = 5120.00 MB
+
+system_info: n_threads = 15 / 32 | AVX = 1 | AVX2 = 1 | AVX512 = 1 | AVX512_VBMI = 1 | AVX512_VNNI = 1 | FMA = 1 | NEON = 0 | ARM_FMA = 0 | F16C = 1 | FP16_VA = 0 | WASM_SIMD = 0 | BLAS = 0 | SSE3 = 1 | VSX = 0 | 
+sampling: repeat_last_n = 64, repeat_penalty = 1.100000, presence_penalty = 0.000000, frequency_penalty = 0.000000, top_k = 40, tfs_z = 1.000000, top_p = 0.950000, typical_p = 1.000000, temp = 0.800000, mirostat = 0, mirostat_lr = 0.100000, mirostat_ent = 5.000000
+generate: n_ctx = 2048, n_batch = 512, n_predict = 40, n_keep = 0
+
+
+
+llama_print_timings:        load time =  1289.51 ms
+llama_print_timings:      sample time =    11.93 ms /    40 runs   (    0.30 ms per token)
+llama_print_timings: prompt eval time =   790.43 ms /     2 tokens (  395.22 ms per token)
+llama_print_timings:        eval time = 25482.43 ms /    39 runs   (  653.40 ms per token)
+llama_print_timings:       total time = 26789.33 ms
+------------------- RUN ---------------------
+COMMAND: ./main -t 15 -m ./models/65B/ggml-model-q4_0.bin -n 40 --ctx-size 2048
+main: build = 588 (ac7876a)
+main: seed  = 1685461161
+llama.cpp: loading model from ./models/65B/ggml-model-q4_0.bin
+llama_model_load_internal: format     = ggjt v3 (latest)
+llama_model_load_internal: n_vocab    = 32000
+llama_model_load_internal: n_ctx      = 2048
+llama_model_load_internal: n_embd     = 8192
+llama_model_load_internal: n_mult     = 256
+llama_model_load_internal: n_head     = 64
+llama_model_load_internal: n_layer    = 80
+llama_model_load_internal: n_rot      = 128
+llama_model_load_internal: ftype      = 2 (mostly Q4_0)
+llama_model_load_internal: n_ff       = 22016
+llama_model_load_internal: n_parts    = 1
+llama_model_load_internal: model size = 65B
+llama_model_load_internal: ggml ctx size =    0.18 MB
+llama_model_load_internal: mem required  = 38610.46 MB (+ 5120.00 MB per state)
+.
+llama_init_from_file: kv self size  = 5120.00 MB
+
+system_info: n_threads = 15 / 32 | AVX = 1 | AVX2 = 1 | AVX512 = 1 | AVX512_VBMI = 1 | AVX512_VNNI = 1 | FMA = 1 | NEON = 0 | ARM_FMA = 0 | F16C = 1 | FP16_VA = 0 | WASM_SIMD = 0 | BLAS = 0 | SSE3 = 1 | VSX = 0 | 
+sampling: repeat_last_n = 64, repeat_penalty = 1.100000, presence_penalty = 0.000000, frequency_penalty = 0.000000, top_k = 40, tfs_z = 1.000000, top_p = 0.950000, typical_p = 1.000000, temp = 0.800000, mirostat = 0, mirostat_lr = 0.100000, mirostat_ent = 5.000000
+generate: n_ctx = 2048, n_batch = 512, n_predict = 40, n_keep = 0
+
+
+
+llama_print_timings:        load time =  1287.68 ms
+llama_print_timings:      sample time =    12.68 ms /    40 runs   (    0.32 ms per token)
+llama_print_timings: prompt eval time =   781.34 ms /     2 tokens (  390.67 ms per token)
+llama_print_timings:        eval time = 25277.15 ms /    39 runs   (  648.13 ms per token)
+llama_print_timings:       total time = 26582.97 ms
+------------------- 3RUN ---------------------
+------------------- RUN ---------------------
+COMMAND: ./main -t 16 -m ./models/65B/ggml-model-q4_0.bin -n 40 --ctx-size 2048
+main: build = 588 (ac7876a)
+main: seed  = 1685461188
+llama.cpp: loading model from ./models/65B/ggml-model-q4_0.bin
+llama_model_load_internal: format     = ggjt v3 (latest)
+llama_model_load_internal: n_vocab    = 32000
+llama_model_load_internal: n_ctx      = 2048
+llama_model_load_internal: n_embd     = 8192
+llama_model_load_internal: n_mult     = 256
+llama_model_load_internal: n_head     = 64
+llama_model_load_internal: n_layer    = 80
+llama_model_load_internal: n_rot      = 128
+llama_model_load_internal: ftype      = 2 (mostly Q4_0)
+llama_model_load_internal: n_ff       = 22016
+llama_model_load_internal: n_parts    = 1
+llama_model_load_internal: model size = 65B
+llama_model_load_internal: ggml ctx size =    0.18 MB
+llama_model_load_internal: mem required  = 38610.46 MB (+ 5120.00 MB per state)
+.
+llama_init_from_file: kv self size  = 5120.00 MB
+
+system_info: n_threads = 16 / 32 | AVX = 1 | AVX2 = 1 | AVX512 = 1 | AVX512_VBMI = 1 | AVX512_VNNI = 1 | FMA = 1 | NEON = 0 | ARM_FMA = 0 | F16C = 1 | FP16_VA = 0 | WASM_SIMD = 0 | BLAS = 0 | SSE3 = 1 | VSX = 0 | 
+sampling: repeat_last_n = 64, repeat_penalty = 1.100000, presence_penalty = 0.000000, frequency_penalty = 0.000000, top_k = 40, tfs_z = 1.000000, top_p = 0.950000, typical_p = 1.000000, temp = 0.800000, mirostat = 0, mirostat_lr = 0.100000, mirostat_ent = 5.000000
+generate: n_ctx = 2048, n_batch = 512, n_predict = 40, n_keep = 0
+
+
+
+llama_print_timings:        load time =  1279.73 ms
+llama_print_timings:      sample time =    12.78 ms /    40 runs   (    0.32 ms per token)
+llama_print_timings: prompt eval time =   785.94 ms /     2 tokens (  392.97 ms per token)
+llama_print_timings:        eval time = 25379.38 ms /    39 runs   (  650.75 ms per token)
+llama_print_timings:       total time = 26677.46 ms
+------------------- RUN ---------------------
+COMMAND: ./main -t 16 -m ./models/65B/ggml-model-q4_0.bin -n 40 --ctx-size 2048
+main: build = 588 (ac7876a)
+main: seed  = 1685461215
+llama.cpp: loading model from ./models/65B/ggml-model-q4_0.bin
+llama_model_load_internal: format     = ggjt v3 (latest)
+llama_model_load_internal: n_vocab    = 32000
+llama_model_load_internal: n_ctx      = 2048
+llama_model_load_internal: n_embd     = 8192
+llama_model_load_internal: n_mult     = 256
+llama_model_load_internal: n_head     = 64
+llama_model_load_internal: n_layer    = 80
+llama_model_load_internal: n_rot      = 128
+llama_model_load_internal: ftype      = 2 (mostly Q4_0)
+llama_model_load_internal: n_ff       = 22016
+llama_model_load_internal: n_parts    = 1
+llama_model_load_internal: model size = 65B
+llama_model_load_internal: ggml ctx size =    0.18 MB
+llama_model_load_internal: mem required  = 38610.46 MB (+ 5120.00 MB per state)
+.
+llama_init_from_file: kv self size  = 5120.00 MB
+
+system_info: n_threads = 16 / 32 | AVX = 1 | AVX2 = 1 | AVX512 = 1 | AVX512_VBMI = 1 | AVX512_VNNI = 1 | FMA = 1 | NEON = 0 | ARM_FMA = 0 | F16C = 1 | FP16_VA = 0 | WASM_SIMD = 0 | BLAS = 0 | SSE3 = 1 | VSX = 0 | 
+sampling: repeat_last_n = 64, repeat_penalty = 1.100000, presence_penalty = 0.000000, frequency_penalty = 0.000000, top_k = 40, tfs_z = 1.000000, top_p = 0.950000, typical_p = 1.000000, temp = 0.800000, mirostat = 0, mirostat_lr = 0.100000, mirostat_ent = 5.000000
+generate: n_ctx = 2048, n_batch = 512, n_predict = 40, n_keep = 0
+
+
+
+llama_print_timings:        load time =  1297.57 ms
+llama_print_timings:      sample time =    12.39 ms /    40 runs   (    0.31 ms per token)
+llama_print_timings: prompt eval time =   794.80 ms /     2 tokens (  397.40 ms per token)
+llama_print_timings:        eval time = 25755.73 ms /    39 runs   (  660.40 ms per token)
+llama_print_timings:       total time = 27071.20 ms
+------------------- RUN ---------------------
+COMMAND: ./main -t 16 -m ./models/65B/ggml-model-q4_0.bin -n 40 --ctx-size 2048
+main: build = 588 (ac7876a)
+main: seed  = 1685461242
+llama.cpp: loading model from ./models/65B/ggml-model-q4_0.bin
+llama_model_load_internal: format     = ggjt v3 (latest)
+llama_model_load_internal: n_vocab    = 32000
+llama_model_load_internal: n_ctx      = 2048
+llama_model_load_internal: n_embd     = 8192
+llama_model_load_internal: n_mult     = 256
+llama_model_load_internal: n_head     = 64
+llama_model_load_internal: n_layer    = 80
+llama_model_load_internal: n_rot      = 128
+llama_model_load_internal: ftype      = 2 (mostly Q4_0)
+llama_model_load_internal: n_ff       = 22016
+llama_model_load_internal: n_parts    = 1
+llama_model_load_internal: model size = 65B
+llama_model_load_internal: ggml ctx size =    0.18 MB
+llama_model_load_internal: mem required  = 38610.46 MB (+ 5120.00 MB per state)
+.
+llama_init_from_file: kv self size  = 5120.00 MB
+
+system_info: n_threads = 16 / 32 | AVX = 1 | AVX2 = 1 | AVX512 = 1 | AVX512_VBMI = 1 | AVX512_VNNI = 1 | FMA = 1 | NEON = 0 | ARM_FMA = 0 | F16C = 1 | FP16_VA = 0 | WASM_SIMD = 0 | BLAS = 0 | SSE3 = 1 | VSX = 0 | 
+sampling: repeat_last_n = 64, repeat_penalty = 1.100000, presence_penalty = 0.000000, frequency_penalty = 0.000000, top_k = 40, tfs_z = 1.000000, top_p = 0.950000, typical_p = 1.000000, temp = 0.800000, mirostat = 0, mirostat_lr = 0.100000, mirostat_ent = 5.000000
+generate: n_ctx = 2048, n_batch = 512, n_predict = 40, n_keep = 0
+
+
+
+llama_print_timings:        load time =  1294.31 ms
+llama_print_timings:      sample time =    12.87 ms /    40 runs   (    0.32 ms per token)
+llama_print_timings: prompt eval time =   790.73 ms /     2 tokens (  395.36 ms per token)
+llama_print_timings:        eval time = 25655.26 ms /    39 runs   (  657.83 ms per token)
+llama_print_timings:       total time = 26967.85 ms
+------------------- 3RUN ---------------------
+------------------- RUN ---------------------
+COMMAND: ./main -t 17 -m ./models/65B/ggml-model-q4_0.bin -n 40 --ctx-size 2048
+main: build = 588 (ac7876a)
+main: seed  = 1685461269
+llama.cpp: loading model from ./models/65B/ggml-model-q4_0.bin
+llama_model_load_internal: format     = ggjt v3 (latest)
+llama_model_load_internal: n_vocab    = 32000
+llama_model_load_internal: n_ctx      = 2048
+llama_model_load_internal: n_embd     = 8192
+llama_model_load_internal: n_mult     = 256
+llama_model_load_internal: n_head     = 64
+llama_model_load_internal: n_layer    = 80
+llama_model_load_internal: n_rot      = 128
+llama_model_load_internal: ftype      = 2 (mostly Q4_0)
+llama_model_load_internal: n_ff       = 22016
+llama_model_load_internal: n_parts    = 1
+llama_model_load_internal: model size = 65B
+llama_model_load_internal: ggml ctx size =    0.18 MB
+llama_model_load_internal: mem required  = 38610.46 MB (+ 5120.00 MB per state)
+.
+llama_init_from_file: kv self size  = 5120.00 MB
+
+system_info: n_threads = 17 / 32 | AVX = 1 | AVX2 = 1 | AVX512 = 1 | AVX512_VBMI = 1 | AVX512_VNNI = 1 | FMA = 1 | NEON = 0 | ARM_FMA = 0 | F16C = 1 | FP16_VA = 0 | WASM_SIMD = 0 | BLAS = 0 | SSE3 = 1 | VSX = 0 | 
+sampling: repeat_last_n = 64, repeat_penalty = 1.100000, presence_penalty = 0.000000, frequency_penalty = 0.000000, top_k = 40, tfs_z = 1.000000, top_p = 0.950000, typical_p = 1.000000, temp = 0.800000, mirostat = 0, mirostat_lr = 0.100000, mirostat_ent = 5.000000
+generate: n_ctx = 2048, n_batch = 512, n_predict = 40, n_keep = 0
+
+
+
+llama_print_timings:        load time =  1511.44 ms
+llama_print_timings:      sample time =    12.43 ms /    40 runs   (    0.31 ms per token)
+llama_print_timings: prompt eval time =  1004.12 ms /     2 tokens (  502.06 ms per token)
+llama_print_timings:        eval time = 29197.34 ms /    39 runs   (  748.65 ms per token)
+llama_print_timings:       total time = 30726.60 ms
+------------------- RUN ---------------------
+COMMAND: ./main -t 17 -m ./models/65B/ggml-model-q4_0.bin -n 40 --ctx-size 2048
+main: build = 588 (ac7876a)
+main: seed  = 1685461300
+llama.cpp: loading model from ./models/65B/ggml-model-q4_0.bin
+llama_model_load_internal: format     = ggjt v3 (latest)
+llama_model_load_internal: n_vocab    = 32000
+llama_model_load_internal: n_ctx      = 2048
+llama_model_load_internal: n_embd     = 8192
+llama_model_load_internal: n_mult     = 256
+llama_model_load_internal: n_head     = 64
+llama_model_load_internal: n_layer    = 80
+llama_model_load_internal: n_rot      = 128
+llama_model_load_internal: ftype      = 2 (mostly Q4_0)
+llama_model_load_internal: n_ff       = 22016
+llama_model_load_internal: n_parts    = 1
+llama_model_load_internal: model size = 65B
+llama_model_load_internal: ggml ctx size =    0.18 MB
+llama_model_load_internal: mem required  = 38610.46 MB (+ 5120.00 MB per state)
+.
+llama_init_from_file: kv self size  = 5120.00 MB
+
+system_info: n_threads = 17 / 32 | AVX = 1 | AVX2 = 1 | AVX512 = 1 | AVX512_VBMI = 1 | AVX512_VNNI = 1 | FMA = 1 | NEON = 0 | ARM_FMA = 0 | F16C = 1 | FP16_VA = 0 | WASM_SIMD = 0 | BLAS = 0 | SSE3 = 1 | VSX = 0 | 
+sampling: repeat_last_n = 64, repeat_penalty = 1.100000, presence_penalty = 0.000000, frequency_penalty = 0.000000, top_k = 40, tfs_z = 1.000000, top_p = 0.950000, typical_p = 1.000000, temp = 0.800000, mirostat = 0, mirostat_lr = 0.100000, mirostat_ent = 5.000000
+generate: n_ctx = 2048, n_batch = 512, n_predict = 40, n_keep = 0
+
+
+
+llama_print_timings:        load time =  1511.45 ms
+llama_print_timings:      sample time =    12.93 ms /    40 runs   (    0.32 ms per token)
+llama_print_timings: prompt eval time =  1008.07 ms /     2 tokens (  504.04 ms per token)
+llama_print_timings:        eval time = 29275.93 ms /    39 runs   (  750.66 ms per token)
+llama_print_timings:       total time = 30805.75 ms
+------------------- RUN ---------------------
+COMMAND: ./main -t 17 -m ./models/65B/ggml-model-q4_0.bin -n 40 --ctx-size 2048
+main: build = 588 (ac7876a)
+main: seed  = 1685461332
+llama.cpp: loading model from ./models/65B/ggml-model-q4_0.bin
+llama_model_load_internal: format     = ggjt v3 (latest)
+llama_model_load_internal: n_vocab    = 32000
+llama_model_load_internal: n_ctx      = 2048
+llama_model_load_internal: n_embd     = 8192
+llama_model_load_internal: n_mult     = 256
+llama_model_load_internal: n_head     = 64
+llama_model_load_internal: n_layer    = 80
+llama_model_load_internal: n_rot      = 128
+llama_model_load_internal: ftype      = 2 (mostly Q4_0)
+llama_model_load_internal: n_ff       = 22016
+llama_model_load_internal: n_parts    = 1
+llama_model_load_internal: model size = 65B
+llama_model_load_internal: ggml ctx size =    0.18 MB
+llama_model_load_internal: mem required  = 38610.46 MB (+ 5120.00 MB per state)
+.
+llama_init_from_file: kv self size  = 5120.00 MB
+
+system_info: n_threads = 17 / 32 | AVX = 1 | AVX2 = 1 | AVX512 = 1 | AVX512_VBMI = 1 | AVX512_VNNI = 1 | FMA = 1 | NEON = 0 | ARM_FMA = 0 | F16C = 1 | FP16_VA = 0 | WASM_SIMD = 0 | BLAS = 0 | SSE3 = 1 | VSX = 0 | 
+sampling: repeat_last_n = 64, repeat_penalty = 1.100000, presence_penalty = 0.000000, frequency_penalty = 0.000000, top_k = 40, tfs_z = 1.000000, top_p = 0.950000, typical_p = 1.000000, temp = 0.800000, mirostat = 0, mirostat_lr = 0.100000, mirostat_ent = 5.000000
+generate: n_ctx = 2048, n_batch = 512, n_predict = 40, n_keep = 0
+
+
+
+llama_print_timings:        load time =  1516.27 ms
+llama_print_timings:      sample time =    12.75 ms /    40 runs   (    0.32 ms per token)
+llama_print_timings: prompt eval time =  1010.38 ms /     2 tokens (  505.19 ms per token)
+llama_print_timings:        eval time = 29366.54 ms /    39 runs   (  752.99 ms per token)
+llama_print_timings:       total time = 30901.01 ms
+------------------- 3RUN ---------------------
+------------------- RUN ---------------------
+COMMAND: ./main -t 18 -m ./models/65B/ggml-model-q4_0.bin -n 40 --ctx-size 2048
+main: build = 588 (ac7876a)
+main: seed  = 1685461363
+llama.cpp: loading model from ./models/65B/ggml-model-q4_0.bin
+llama_model_load_internal: format     = ggjt v3 (latest)
+llama_model_load_internal: n_vocab    = 32000
+llama_model_load_internal: n_ctx      = 2048
+llama_model_load_internal: n_embd     = 8192
+llama_model_load_internal: n_mult     = 256
+llama_model_load_internal: n_head     = 64
+llama_model_load_internal: n_layer    = 80
+llama_model_load_internal: n_rot      = 128
+llama_model_load_internal: ftype      = 2 (mostly Q4_0)
+llama_model_load_internal: n_ff       = 22016
+llama_model_load_internal: n_parts    = 1
+llama_model_load_internal: model size = 65B
+llama_model_load_internal: ggml ctx size =    0.18 MB
+llama_model_load_internal: mem required  = 38610.46 MB (+ 5120.00 MB per state)
+.
+llama_init_from_file: kv self size  = 5120.00 MB
+
+system_info: n_threads = 18 / 32 | AVX = 1 | AVX2 = 1 | AVX512 = 1 | AVX512_VBMI = 1 | AVX512_VNNI = 1 | FMA = 1 | NEON = 0 | ARM_FMA = 0 | F16C = 1 | FP16_VA = 0 | WASM_SIMD = 0 | BLAS = 0 | SSE3 = 1 | VSX = 0 | 
+sampling: repeat_last_n = 64, repeat_penalty = 1.100000, presence_penalty = 0.000000, frequency_penalty = 0.000000, top_k = 40, tfs_z = 1.000000, top_p = 0.950000, typical_p = 1.000000, temp = 0.800000, mirostat = 0, mirostat_lr = 0.100000, mirostat_ent = 5.000000
+generate: n_ctx = 2048, n_batch = 512, n_predict = 40, n_keep = 0
+
+
+
+llama_print_timings:        load time =  1479.40 ms
+llama_print_timings:      sample time =    12.93 ms /    40 runs   (    0.32 ms per token)
+llama_print_timings: prompt eval time =   973.96 ms /     2 tokens (  486.98 ms per token)
+llama_print_timings:        eval time = 28334.69 ms /    39 runs   (  726.53 ms per token)
+llama_print_timings:       total time = 29832.47 ms
+------------------- RUN ---------------------
+COMMAND: ./main -t 18 -m ./models/65B/ggml-model-q4_0.bin -n 40 --ctx-size 2048
+main: build = 588 (ac7876a)
+main: seed  = 1685461393
+llama.cpp: loading model from ./models/65B/ggml-model-q4_0.bin
+llama_model_load_internal: format     = ggjt v3 (latest)
+llama_model_load_internal: n_vocab    = 32000
+llama_model_load_internal: n_ctx      = 2048
+llama_model_load_internal: n_embd     = 8192
+llama_model_load_internal: n_mult     = 256
+llama_model_load_internal: n_head     = 64
+llama_model_load_internal: n_layer    = 80
+llama_model_load_internal: n_rot      = 128
+llama_model_load_internal: ftype      = 2 (mostly Q4_0)
+llama_model_load_internal: n_ff       = 22016
+llama_model_load_internal: n_parts    = 1
+llama_model_load_internal: model size = 65B
+llama_model_load_internal: ggml ctx size =    0.18 MB
+llama_model_load_internal: mem required  = 38610.46 MB (+ 5120.00 MB per state)
+.
+llama_init_from_file: kv self size  = 5120.00 MB
+
+system_info: n_threads = 18 / 32 | AVX = 1 | AVX2 = 1 | AVX512 = 1 | AVX512_VBMI = 1 | AVX512_VNNI = 1 | FMA = 1 | NEON = 0 | ARM_FMA = 0 | F16C = 1 | FP16_VA = 0 | WASM_SIMD = 0 | BLAS = 0 | SSE3 = 1 | VSX = 0 | 
+sampling: repeat_last_n = 64, repeat_penalty = 1.100000, presence_penalty = 0.000000, frequency_penalty = 0.000000, top_k = 40, tfs_z = 1.000000, top_p = 0.950000, typical_p = 1.000000, temp = 0.800000, mirostat = 0, mirostat_lr = 0.100000, mirostat_ent = 5.000000
+generate: n_ctx = 2048, n_batch = 512, n_predict = 40, n_keep = 0
+
+
+
+llama_print_timings:        load time =  1476.77 ms
+llama_print_timings:      sample time =    12.74 ms /    40 runs   (    0.32 ms per token)
+llama_print_timings: prompt eval time =   974.02 ms /     2 tokens (  487.01 ms per token)
+llama_print_timings:        eval time = 27860.68 ms /    39 runs   (  714.38 ms per token)
+llama_print_timings:       total time = 29355.63 ms
+------------------- RUN ---------------------
+COMMAND: ./main -t 18 -m ./models/65B/ggml-model-q4_0.bin -n 40 --ctx-size 2048
+main: build = 588 (ac7876a)
+main: seed  = 1685461423
+llama.cpp: loading model from ./models/65B/ggml-model-q4_0.bin
+llama_model_load_internal: format     = ggjt v3 (latest)
+llama_model_load_internal: n_vocab    = 32000
+llama_model_load_internal: n_ctx      = 2048
+llama_model_load_internal: n_embd     = 8192
+llama_model_load_internal: n_mult     = 256
+llama_model_load_internal: n_head     = 64
+llama_model_load_internal: n_layer    = 80
+llama_model_load_internal: n_rot      = 128
+llama_model_load_internal: ftype      = 2 (mostly Q4_0)
+llama_model_load_internal: n_ff       = 22016
+llama_model_load_internal: n_parts    = 1
+llama_model_load_internal: model size = 65B
+llama_model_load_internal: ggml ctx size =    0.18 MB
+llama_model_load_internal: mem required  = 38610.46 MB (+ 5120.00 MB per state)
+.
+llama_init_from_file: kv self size  = 5120.00 MB
+
+system_info: n_threads = 18 / 32 | AVX = 1 | AVX2 = 1 | AVX512 = 1 | AVX512_VBMI = 1 | AVX512_VNNI = 1 | FMA = 1 | NEON = 0 | ARM_FMA = 0 | F16C = 1 | FP16_VA = 0 | WASM_SIMD = 0 | BLAS = 0 | SSE3 = 1 | VSX = 0 | 
+sampling: repeat_last_n = 64, repeat_penalty = 1.100000, presence_penalty = 0.000000, frequency_penalty = 0.000000, top_k = 40, tfs_z = 1.000000, top_p = 0.950000, typical_p = 1.000000, temp = 0.800000, mirostat = 0, mirostat_lr = 0.100000, mirostat_ent = 5.000000
+generate: n_ctx = 2048, n_batch = 512, n_predict = 40, n_keep = 0
+
+
+
+llama_print_timings:        load time =  1476.72 ms
+llama_print_timings:      sample time =    12.62 ms /    40 runs   (    0.32 ms per token)
+llama_print_timings: prompt eval time =   964.04 ms /     2 tokens (  482.02 ms per token)
+llama_print_timings:        eval time = 27939.37 ms /    39 runs   (  716.39 ms per token)
+llama_print_timings:       total time = 29434.14 ms
+------------------- 3RUN ---------------------
+------------------- RUN ---------------------
+COMMAND: ./main -t 19 -m ./models/65B/ggml-model-q4_0.bin -n 40 --ctx-size 2048
+main: build = 588 (ac7876a)
+main: seed  = 1685461453
+llama.cpp: loading model from ./models/65B/ggml-model-q4_0.bin
+llama_model_load_internal: format     = ggjt v3 (latest)
+llama_model_load_internal: n_vocab    = 32000
+llama_model_load_internal: n_ctx      = 2048
+llama_model_load_internal: n_embd     = 8192
+llama_model_load_internal: n_mult     = 256
+llama_model_load_internal: n_head     = 64
+llama_model_load_internal: n_layer    = 80
+llama_model_load_internal: n_rot      = 128
+llama_model_load_internal: ftype      = 2 (mostly Q4_0)
+llama_model_load_internal: n_ff       = 22016
+llama_model_load_internal: n_parts    = 1
+llama_model_load_internal: model size = 65B
+llama_model_load_internal: ggml ctx size =    0.18 MB
+llama_model_load_internal: mem required  = 38610.46 MB (+ 5120.00 MB per state)
+.
+llama_init_from_file: kv self size  = 5120.00 MB
+
+system_info: n_threads = 19 / 32 | AVX = 1 | AVX2 = 1 | AVX512 = 1 | AVX512_VBMI = 1 | AVX512_VNNI = 1 | FMA = 1 | NEON = 0 | ARM_FMA = 0 | F16C = 1 | FP16_VA = 0 | WASM_SIMD = 0 | BLAS = 0 | SSE3 = 1 | VSX = 0 | 
+sampling: repeat_last_n = 64, repeat_penalty = 1.100000, presence_penalty = 0.000000, frequency_penalty = 0.000000, top_k = 40, tfs_z = 1.000000, top_p = 0.950000, typical_p = 1.000000, temp = 0.800000, mirostat = 0, mirostat_lr = 0.100000, mirostat_ent = 5.000000
+generate: n_ctx = 2048, n_batch = 512, n_predict = 40, n_keep = 0
+
+
+
+llama_print_timings:        load time =  1450.57 ms
+llama_print_timings:      sample time =    12.76 ms /    40 runs   (    0.32 ms per token)
+llama_print_timings: prompt eval time =   938.34 ms /     2 tokens (  469.17 ms per token)
+llama_print_timings:        eval time = 27404.19 ms /    39 runs   (  702.67 ms per token)
+llama_print_timings:       total time = 28872.98 ms
+------------------- RUN ---------------------
+COMMAND: ./main -t 19 -m ./models/65B/ggml-model-q4_0.bin -n 40 --ctx-size 2048
+main: build = 588 (ac7876a)
+main: seed  = 1685461482
+llama.cpp: loading model from ./models/65B/ggml-model-q4_0.bin
+llama_model_load_internal: format     = ggjt v3 (latest)
+llama_model_load_internal: n_vocab    = 32000
+llama_model_load_internal: n_ctx      = 2048
+llama_model_load_internal: n_embd     = 8192
+llama_model_load_internal: n_mult     = 256
+llama_model_load_internal: n_head     = 64
+llama_model_load_internal: n_layer    = 80
+llama_model_load_internal: n_rot      = 128
+llama_model_load_internal: ftype      = 2 (mostly Q4_0)
+llama_model_load_internal: n_ff       = 22016
+llama_model_load_internal: n_parts    = 1
+llama_model_load_internal: model size = 65B
+llama_model_load_internal: ggml ctx size =    0.18 MB
+llama_model_load_internal: mem required  = 38610.46 MB (+ 5120.00 MB per state)
+.
+llama_init_from_file: kv self size  = 5120.00 MB
+
+system_info: n_threads = 19 / 32 | AVX = 1 | AVX2 = 1 | AVX512 = 1 | AVX512_VBMI = 1 | AVX512_VNNI = 1 | FMA = 1 | NEON = 0 | ARM_FMA = 0 | F16C = 1 | FP16_VA = 0 | WASM_SIMD = 0 | BLAS = 0 | SSE3 = 1 | VSX = 0 | 
+sampling: repeat_last_n = 64, repeat_penalty = 1.100000, presence_penalty = 0.000000, frequency_penalty = 0.000000, top_k = 40, tfs_z = 1.000000, top_p = 0.950000, typical_p = 1.000000, temp = 0.800000, mirostat = 0, mirostat_lr = 0.100000, mirostat_ent = 5.000000
+generate: n_ctx = 2048, n_batch = 512, n_predict = 40, n_keep = 0
+
+
+
+llama_print_timings:        load time =  1451.34 ms
+llama_print_timings:      sample time =    12.74 ms /    40 runs   (    0.32 ms per token)
+llama_print_timings: prompt eval time =   938.43 ms /     2 tokens (  469.21 ms per token)
+llama_print_timings:        eval time = 27448.07 ms /    39 runs   (  703.80 ms per token)
+llama_print_timings:       total time = 28917.63 ms
+------------------- RUN ---------------------
+COMMAND: ./main -t 19 -m ./models/65B/ggml-model-q4_0.bin -n 40 --ctx-size 2048
+main: build = 588 (ac7876a)
+main: seed  = 1685461511
+llama.cpp: loading model from ./models/65B/ggml-model-q4_0.bin
+llama_model_load_internal: format     = ggjt v3 (latest)
+llama_model_load_internal: n_vocab    = 32000
+llama_model_load_internal: n_ctx      = 2048
+llama_model_load_internal: n_embd     = 8192
+llama_model_load_internal: n_mult     = 256
+llama_model_load_internal: n_head     = 64
+llama_model_load_internal: n_layer    = 80
+llama_model_load_internal: n_rot      = 128
+llama_model_load_internal: ftype      = 2 (mostly Q4_0)
+llama_model_load_internal: n_ff       = 22016
+llama_model_load_internal: n_parts    = 1
+llama_model_load_internal: model size = 65B
+llama_model_load_internal: ggml ctx size =    0.18 MB
+llama_model_load_internal: mem required  = 38610.46 MB (+ 5120.00 MB per state)
+.
+llama_init_from_file: kv self size  = 5120.00 MB
+
+system_info: n_threads = 19 / 32 | AVX = 1 | AVX2 = 1 | AVX512 = 1 | AVX512_VBMI = 1 | AVX512_VNNI = 1 | FMA = 1 | NEON = 0 | ARM_FMA = 0 | F16C = 1 | FP16_VA = 0 | WASM_SIMD = 0 | BLAS = 0 | SSE3 = 1 | VSX = 0 | 
+sampling: repeat_last_n = 64, repeat_penalty = 1.100000, presence_penalty = 0.000000, frequency_penalty = 0.000000, top_k = 40, tfs_z = 1.000000, top_p = 0.950000, typical_p = 1.000000, temp = 0.800000, mirostat = 0, mirostat_lr = 0.100000, mirostat_ent = 5.000000
+generate: n_ctx = 2048, n_batch = 512, n_predict = 40, n_keep = 0
+
+
+
+llama_print_timings:        load time =  1441.13 ms
+llama_print_timings:      sample time =    11.78 ms /    40 runs   (    0.29 ms per token)
+llama_print_timings: prompt eval time =   936.98 ms /     2 tokens (  468.49 ms per token)
+llama_print_timings:        eval time = 27419.46 ms /    39 runs   (  703.06 ms per token)
+llama_print_timings:       total time = 28877.81 ms
+------------------- 3RUN ---------------------
+------------------- RUN ---------------------
+COMMAND: ./main -t 20 -m ./models/65B/ggml-model-q4_0.bin -n 40 --ctx-size 2048
+main: build = 588 (ac7876a)
+main: seed  = 1685461540
+llama.cpp: loading model from ./models/65B/ggml-model-q4_0.bin
+llama_model_load_internal: format     = ggjt v3 (latest)
+llama_model_load_internal: n_vocab    = 32000
+llama_model_load_internal: n_ctx      = 2048
+llama_model_load_internal: n_embd     = 8192
+llama_model_load_internal: n_mult     = 256
+llama_model_load_internal: n_head     = 64
+llama_model_load_internal: n_layer    = 80
+llama_model_load_internal: n_rot      = 128
+llama_model_load_internal: ftype      = 2 (mostly Q4_0)
+llama_model_load_internal: n_ff       = 22016
+llama_model_load_internal: n_parts    = 1
+llama_model_load_internal: model size = 65B
+llama_model_load_internal: ggml ctx size =    0.18 MB
+llama_model_load_internal: mem required  = 38610.46 MB (+ 5120.00 MB per state)
+.
+llama_init_from_file: kv self size  = 5120.00 MB
+
+system_info: n_threads = 20 / 32 | AVX = 1 | AVX2 = 1 | AVX512 = 1 | AVX512_VBMI = 1 | AVX512_VNNI = 1 | FMA = 1 | NEON = 0 | ARM_FMA = 0 | F16C = 1 | FP16_VA = 0 | WASM_SIMD = 0 | BLAS = 0 | SSE3 = 1 | VSX = 0 | 
+sampling: repeat_last_n = 64, repeat_penalty = 1.100000, presence_penalty = 0.000000, frequency_penalty = 0.000000, top_k = 40, tfs_z = 1.000000, top_p = 0.950000, typical_p = 1.000000, temp = 0.800000, mirostat = 0, mirostat_lr = 0.100000, mirostat_ent = 5.000000
+generate: n_ctx = 2048, n_batch = 512, n_predict = 40, n_keep = 0
+
+
+
+llama_print_timings:        load time =  1415.15 ms
+llama_print_timings:      sample time =    12.00 ms /    40 runs   (    0.30 ms per token)
+llama_print_timings: prompt eval time =   904.93 ms /     2 tokens (  452.46 ms per token)
+llama_print_timings:        eval time = 26702.24 ms /    39 runs   (  684.67 ms per token)
+llama_print_timings:       total time = 28134.87 ms
+------------------- RUN ---------------------
+COMMAND: ./main -t 20 -m ./models/65B/ggml-model-q4_0.bin -n 40 --ctx-size 2048
+main: build = 588 (ac7876a)
+main: seed  = 1685461569
+llama.cpp: loading model from ./models/65B/ggml-model-q4_0.bin
+llama_model_load_internal: format     = ggjt v3 (latest)
+llama_model_load_internal: n_vocab    = 32000
+llama_model_load_internal: n_ctx      = 2048
+llama_model_load_internal: n_embd     = 8192
+llama_model_load_internal: n_mult     = 256
+llama_model_load_internal: n_head     = 64
+llama_model_load_internal: n_layer    = 80
+llama_model_load_internal: n_rot      = 128
+llama_model_load_internal: ftype      = 2 (mostly Q4_0)
+llama_model_load_internal: n_ff       = 22016
+llama_model_load_internal: n_parts    = 1
+llama_model_load_internal: model size = 65B
+llama_model_load_internal: ggml ctx size =    0.18 MB
+llama_model_load_internal: mem required  = 38610.46 MB (+ 5120.00 MB per state)
+.
+llama_init_from_file: kv self size  = 5120.00 MB
+
+system_info: n_threads = 20 / 32 | AVX = 1 | AVX2 = 1 | AVX512 = 1 | AVX512_VBMI = 1 | AVX512_VNNI = 1 | FMA = 1 | NEON = 0 | ARM_FMA = 0 | F16C = 1 | FP16_VA = 0 | WASM_SIMD = 0 | BLAS = 0 | SSE3 = 1 | VSX = 0 | 
+sampling: repeat_last_n = 64, repeat_penalty = 1.100000, presence_penalty = 0.000000, frequency_penalty = 0.000000, top_k = 40, tfs_z = 1.000000, top_p = 0.950000, typical_p = 1.000000, temp = 0.800000, mirostat = 0, mirostat_lr = 0.100000, mirostat_ent = 5.000000
+generate: n_ctx = 2048, n_batch = 512, n_predict = 40, n_keep = 0
+
+
+
+llama_print_timings:        load time =  1405.92 ms
+llama_print_timings:      sample time =    12.08 ms /    40 runs   (    0.30 ms per token)
+llama_print_timings: prompt eval time =   904.60 ms /     2 tokens (  452.30 ms per token)
+llama_print_timings:        eval time = 26691.03 ms /    39 runs   (  684.39 ms per token)
+llama_print_timings:       total time = 28114.54 ms
+------------------- RUN ---------------------
+COMMAND: ./main -t 20 -m ./models/65B/ggml-model-q4_0.bin -n 40 --ctx-size 2048
+main: build = 588 (ac7876a)
+main: seed  = 1685461597
+llama.cpp: loading model from ./models/65B/ggml-model-q4_0.bin
+llama_model_load_internal: format     = ggjt v3 (latest)
+llama_model_load_internal: n_vocab    = 32000
+llama_model_load_internal: n_ctx      = 2048
+llama_model_load_internal: n_embd     = 8192
+llama_model_load_internal: n_mult     = 256
+llama_model_load_internal: n_head     = 64
+llama_model_load_internal: n_layer    = 80
+llama_model_load_internal: n_rot      = 128
+llama_model_load_internal: ftype      = 2 (mostly Q4_0)
+llama_model_load_internal: n_ff       = 22016
+llama_model_load_internal: n_parts    = 1
+llama_model_load_internal: model size = 65B
+llama_model_load_internal: ggml ctx size =    0.18 MB
+llama_model_load_internal: mem required  = 38610.46 MB (+ 5120.00 MB per state)
+.
+llama_init_from_file: kv self size  = 5120.00 MB
+
+system_info: n_threads = 20 / 32 | AVX = 1 | AVX2 = 1 | AVX512 = 1 | AVX512_VBMI = 1 | AVX512_VNNI = 1 | FMA = 1 | NEON = 0 | ARM_FMA = 0 | F16C = 1 | FP16_VA = 0 | WASM_SIMD = 0 | BLAS = 0 | SSE3 = 1 | VSX = 0 | 
+sampling: repeat_last_n = 64, repeat_penalty = 1.100000, presence_penalty = 0.000000, frequency_penalty = 0.000000, top_k = 40, tfs_z = 1.000000, top_p = 0.950000, typical_p = 1.000000, temp = 0.800000, mirostat = 0, mirostat_lr = 0.100000, mirostat_ent = 5.000000
+generate: n_ctx = 2048, n_batch = 512, n_predict = 40, n_keep = 0
+
+
+
+llama_print_timings:        load time =  1412.20 ms
+llama_print_timings:      sample time =    12.72 ms /    40 runs   (    0.32 ms per token)
+llama_print_timings: prompt eval time =   907.69 ms /     2 tokens (  453.84 ms per token)
+llama_print_timings:        eval time = 26706.89 ms /    39 runs   (  684.79 ms per token)
+llama_print_timings:       total time = 28137.28 ms
