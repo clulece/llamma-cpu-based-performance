@@ -13,10 +13,10 @@
                        height=device-height,
                        initial-scale=1.0,
                        minimum-scale=1.0">-->
-        <script src="/resources/plotly-2.23.2.min.js" charset="utf-8"></script>
+        <script src="./resources/plotly-2.23.2.min.js" charset="utf-8"></script>
         <script>
             window.addEventListener("load", async function() {
-                datasets = await fetch("/data/html-data/data.json").then(x => x.json())
+                datasets = await fetch("./data/html-data/data.json").then(x => x.json())
                 
                 
                 for (var setname of Object.keys(datasets)) {
@@ -119,7 +119,7 @@
         RAMSPEED-DIMMCOUNT-FREQGOV-NINSTANCE-PARAM-CTX-MODEL   
         </pre>
         <p>For example, the label <code>5200-2dimm-schedutil-3-7B-512-ggml-model-q4_0.bin</code> pertains to a run that was done when the system had 2 dimms of ram operating at 5200MT/s, the CPU frequency governer was set to <code>schedutil</code>, 3 seperate instances of llama.cpp were running the ggml-model-q4_0.bin version of the 7B model with a 512 context window.  
-        <p>The data used for these graphs is available for download as a zipped archive <a download href="/data/html-data/data-QVlr1kKzDjc=.7z">here</a>. Use the password <code>QVlr1kKzDjc=</code> to access the data.  
+        <p>The data used for these graphs is available for download as a zipped archive <a download href="./data/html-data/data-QVlr1kKzDjc=.7z">here</a>. Use the password <code>QVlr1kKzDjc=</code> to access the data.  
         <p>Thes graphs are best viewed while consuming at least one tomato 🍅️.
         <h2>Interactive Graphs</h2>
     </body>
